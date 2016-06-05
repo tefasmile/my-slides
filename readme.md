@@ -15,6 +15,6 @@ Hola en este repositorio encontrarás los enlaces a todas las slides que hago pa
 * [¿Qué es JavaScript?](http://jonmircha.github.io/slides-que-es-js)
 
 
-- [x] Finish my changes
+- [ ] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
