@@ -13,3 +13,8 @@ Hola en este repositorio encontrarás los enlaces a todas las slides que hago pa
 * [Introducción al Patrón de Diseño de Software: Modelo Vista Controlador (MVC)](http://jonmircha.github.io/slides-mvc)
 * [Introducción a los Servidores Web](http://jonmircha.github.io/slides-servidor-web)
 * [¿Qué es JavaScript?](http://jonmircha.github.io/slides-que-es-js)
+
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
