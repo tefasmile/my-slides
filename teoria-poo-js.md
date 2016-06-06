@@ -19,6 +19,7 @@
 1. [JSON](#json)
 1. [AJAX](#ajax)
 1. [API's](#apis)
+1. [JavaScript Asíncrono y Diferido](#javascript-asíncrono-y-diferido)
 
 ## PROGRAMACIÓN
 La gente cree que programar es dificil, algunas razones:
@@ -729,5 +730,50 @@ En JavaScript tenemos 2 tipos de API's:
 	* [OMDb API](http://omdbapi.com/)
 	* [API de Marvel](http://developer.marvel.com/)
 	* etc
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## JavaScript Asíncrono y Diferido
+
+### JavaScript Clásico
+
+Cuando se carga el JavaScript de forma natural, pueden existir problemas de rendimiento ya que el documento HTML se parsea hasta que se encuentra la etiqueta de script. En ese punto todo se detiene y el navegador se encarga de descargar el script y ejecutar lo que corresponda.
+
+	<script src="js/mi_codigo.js">
+
+![Carga de JS Clásico](http://bextlan.com/img/para-cursos/script-js-clasico.png)
+
+Realizada dicha operación el parseo de HTML seguirá su curso. Esto en algunas situaciones hace que el usuario perciba lentitud al cargarse la página. El script actúa de forma bloqueadora.
+
+A partir de HTML5 están disponibles dos nuevos atributos para cargar los scripts: **`async`** y **`defer`**. Ambos aportan flexibilidad al código que se construya.
+
+### JavaScript Diferido
+
+El atributo **`defer`** es **`boolean`**, cuando está presente, especifica que el script se ejecuta cuando la página ha terminado de cargarse. Sólo debe usarse para scripts externos.
+
+[¿Puedo usarlo?](http://caniuse.com/#search=defer)
+
+El navegador podrá seguir parseando y presentando partes de la página mientras se descarga el fichero de JavaScript.
+
+	<script src="js/mi_codigo.js" defer>
+
+![Carga de JS Diferido](http://bextlan.com/img/para-cursos/script-js-defer.png)
+
+Esto dará una sensación de mayor velocidad al usuario. El script se ejecutará una vez finalizada la carga de la página.
+
+### JavaScript Asíncrono
+
+El atributo **`async`** es **`boolean`**, cuando está presente, especifica que la secuencia de comandos se ejecutará de forma asíncrona tan pronto como esté disponible. Sólo debe usarse para scripts externos.
+
+[¿Puedo usarlo?](http://caniuse.com/#search=async)
+
+Como su nombre indica implica que la carga del script será totalmente asíncrona, esto permite que el navegador cargue y ejecute el script en paralelo, sin esperar que la página termine de cargar.
+
+	<script src="js/mi_codigo.js" async>
+
+![Carga de JS Asíncrono](http://bextlan.com/img/para-cursos/script-js-async.png)
+
+Esto nos puede ayudar en algunas ocasiones pero hay que gestionarlo con cuidado ya que ni siquiera el DOM estará disponible.
 
 **[⬆ regresar al índice](#Índice)**
