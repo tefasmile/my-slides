@@ -1,11 +1,25 @@
 # Responsive Web Design
 ![Responsive Web Design](http://bextlan.com/v4/themes/v4/img/cursos/responsive-design.jpg)
 
+## Índice
+1. [Traducciones al español](#traducciones-al-español)
+1. [Un poco de historia](#un-poco-de-historia)
+1. [Concepto](#concepto)
+1. [Técnicas de Diseño Web MultiDispositivo](#técnicas-de-diseño-web-multidispositivo)
+1. [Enfoques de Diseño Web MultiDispositivo](#enfoques-de-diseño-web-multidispositivo)
+1. [Media Queries](#media-queries)
+1. [Breakpoints](#breakpoints)
+1. [Más Recursos](#más-recursos)
+
+
 ## Traducciones al español:
 * Diseño Web Sensible o
 * Diseño Web Adaptable o
 * Diseño Web Responsivo o
 * etc.
+
+**[⬆ regresar al índice](#Índice)**
+
 
 ## Un poco de historia
  -----------------------------------------------------------------------------------------
@@ -24,7 +38,11 @@ Dicha recomendación, aunque específica para dispositivos móviles, puntualiza 
 
 El concepto de **One Web** hace referencia a la idea de construir una web para todos (**Web for All**) y accesible desde cualquier tipo de dispositivo (**Web on Everything**)
 
-##Concepto en 2010 - 2011
+**[⬆ regresar al índice](#Índice)**
+
+
+## Concepto 
+### en 2010 - 2011
 Formalmente **Responsive Web Design** fue un término acuñado el 25 de mayo de 2010 por [Ethan Marcotte](https://twitter.com/beep) en su artículo [Responsive Web Design](http://alistapart.com/article/responsive-web-design) publicado en [A List Apart](http://alistapart.com/about) y posteriormente argumentado en el [libro de mismo nombre](https://abookapart.com/products/responsive-web-design) publicado en 2011.
 
 En dichas fechas (2010-2011) se presenta como una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de los sitios y aplicaciones web al dispositivo que se esté utilizando para visualizarlos.
@@ -35,7 +53,7 @@ Se basa en 3 principios de CSS:
 2. Multimedios Flexibles
 3. Uso de Media Queries
 
-##Concepto HOY
+### HOY
 Hoy día los sitios y aplicaciones web se visualizan en multitud de tipos de dispositivos como:
 * Tabletas
 * Teléfonos inteligentes
@@ -60,8 +78,10 @@ Por tales motivos el Responsive Web Design hoy:
 ___
 
 ### Hoy Responsive Web Design es la manera de hacer Diseño Web Actual para MultiDispositivos
-
 ___
+
+**[⬆ regresar al índice](#Índice)**
+
 
 ## Técnicas de Diseño Web MultiDispositivo
 * [Responsive Web Design](https://abookapart.com/products/responsive-web-design) (CSS)
@@ -69,6 +89,9 @@ ___
 * [Responsible Responsive Design](https://abookapart.com/products/responsible-responsive-design) (CSS + JS)
 * [RESS](http://www.lukew.com/ff/entry.asp?1392) (Responsive Web Design + Server Side)
 * [AMP](https://www.ampproject.org/) (Accelerated Mobile Pages)
+
+**[⬆ regresar al índice](#Índice)**
+
 
 ## Enfoques de Diseño Web MultiDispositivo
 
@@ -81,6 +104,9 @@ ___
 | Breakpoints | Del Menor al Mayor | Del Mayor al Menor |
 | | ![Mobile First](http://bextlan.com/img/para-cursos/mobile-first.png) | ![Desktop First](http://bextlan.com/img/para-cursos/desktop-first.png) |
  ---------------------------------------
+
+**[⬆ regresar al índice](#Índice)**
+
 
 ## Media Queries
 Desde la especificación de CSS 2.1, las hojas de estilo han tenido cierto grado de capacidad para el reconocimiento de dispositivos mediante el uso de tipos de medios. Por ejemplo:
@@ -104,6 +130,9 @@ La sintaxis es la siguiente:
 * [¿Puedo usarlas?](http://caniuse.com/#search=css3%20media)
 * Inspírate en [mediaqueri.es](http://mediaqueri.es/)
 * Lista completa de [media queries](https://www.w3.org/TR/css3-mediaqueries/)
+
+**[⬆ regresar al índice](#Índice)**
+
 
 ## Breakpoints
 Ethan Marcotte en su libro Responsive Design (113-114 pags) nos propone la siguiente lista de puntos de interrupción según la resolución del dispositivo:
@@ -142,6 +171,9 @@ Aunque los pixeles se consideran una unidad de medida absoluta, en realidad son 
 | 1200px / 16px = 75em |
 ---------------------------------------
 
+**[⬆ regresar al índice](#Índice)**
+
+
 ## Más Recursos
 * [ResponsiveDesign.is](https://responsivedesign.is/)
 * [Responsive Resources](http://bradfrost.github.io/this-is-responsive/resources.html)
@@ -150,3 +182,5 @@ Aunque los pixeles se consideran una unidad de medida absoluta, en realidad son 
 * [SEO para Móviles de Google](https://developers.google.com/webmasters/mobile-sites/mobile-seo/?hl=es)
 * [Prueba de optimización para móviles de Google](https://www.google.com/webmasters/tools/mobile-friendly/)
 * [PageSpeed Insights de Google](https://developers.google.com/speed/pagespeed/insights/)
+
+**[⬆ regresar al índice](#Índice)**
