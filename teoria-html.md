@@ -5,7 +5,7 @@
 
 ## Índice
 1. [Estructura y Contenido](#estructura-y-contenido)
-1. [Etiquetas HTML](#Etiquetas-html)
+1. [Etiquetas HTML](#etiquetas-html)
 1. [Semántica](#semántica)
 1. [Buenas Prácticas de Código HTML](#buenas-prácticas-de-código-html)
 1. [Estructura Básica HTML5](#estructura-básica-html5)
