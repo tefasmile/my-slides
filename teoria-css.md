@@ -44,7 +44,7 @@ selector {
 Elemento(s) al que se le aplican reglas CSS
 
 ### Selectores Básicos:
-* **de Etiquetas** `p { ... }`
+* **De Etiquetas** `p { ... }`
 * **Identificadores** `#menu { ... }`
 * **Clases** `.item { ... }`
 * [Más info](http://librosweb.es/libro/css/capitulo_2.html)
@@ -254,8 +254,8 @@ CSS controla el aspecto de todas las cajas (contenedores), permite definir la al
     * la posición del body del documento o 
     * del primer elemento padre relativo que tenga
 * **Fijo**: Permite mantener fijo un elemento
-* **Pegajoso**: Posicionamiento experimental, permite que el elemento sea relativo o fijo dependiendo del area donde se visualiza
 * **Flotante**: Convierte un elemento en flotante desplazándolo hasta la zona más a la izquierda o más a la derecha de la posición en la que originalmente se encontraba
+* **Pegajoso**: Posicionamiento experimental, permite que el elemento sea relativo o fijo dependiendo del area donde se visualiza
 * [Más info](http://librosweb.es/libro/css/capitulo_5.html)
 
 **[⬆ regresar al índice](#Índice)**
@@ -416,6 +416,7 @@ Un patrón resulta ser una solución a un problema. Para que una solución sea c
 * [jQueryMobile](https://jquerymobile.com/)
 * [Materialize](http://materializecss.com/)
 * [MUI](https://www.muicss.com/)
+* [Semantic UI](http://semantic-ui.com/)
 * [Flexbox Grid](http://flexboxgrid.com/)
 * [Responsimple](http://jonmircha.github.io/responsimple/) :heart_eyes:
 * [Comparativas entre Frameworks](http://responsive.vermilion.com/compare.php)
