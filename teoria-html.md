@@ -1,7 +1,7 @@
 # HTML Hyper Text Markup Language
 **(Lenguaje de Marcado de Hiper Texto)**
 
-![HTML](http://bextlan.com/img/para-cursos/html5-logo.jpg)
+![HTML](http://bextlan.com/img/para-cursos/html5-logo.png)
 
 ## Índice
 1. [Estructura y Contenido](#estructura-y-contenido)
