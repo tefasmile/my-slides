@@ -370,10 +370,10 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 
 ## Sentencias de Datos
 
-* Create - INSERT
-* Read   - SELECT
-* Update - UPDATE
-* Delete - DELETE
+* Create - **`INSERT`**
+* Read   - **`SELECT`**
+* Update - **`UPDATE`**
+* Delete - **`DELETE`**
 
 ### CREATE
 Insertar 1 Registro
