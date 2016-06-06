@@ -19,7 +19,7 @@
 1. [JSON](#json)
 1. [AJAX](#ajax)
 1. [API's](#apis)
-1. [JavaScript Asíncrono y Diferido](#javascript-asíncrono-y-diferido)
+1. [JavaScript Diferido y Asíncrono](#javascript-diferido-y-asíncrono)
 
 ## PROGRAMACIÓN
 La gente cree que programar es dificil, algunas razones:
@@ -734,7 +734,7 @@ En JavaScript tenemos 2 tipos de API's:
 **[⬆ regresar al índice](#Índice)**
 
 
-## JavaScript Asíncrono y Diferido
+## JavaScript Diferido y Asíncrono
 
 ### JavaScript Clásico
 
