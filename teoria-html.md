@@ -1,10 +1,18 @@
-# HTML
+# HTML Hyper Text Markup Language
+**(Lenguaje de Marcado de Hiper Texto)**
+
+![HTML](http://bextlan.com/img/para-cursos/html5-logo.jpg)
 
 ## Índice
-1. [](#)
-**[⬆ regresar al índice](#Índice)**
+1. [Estructura y Contenido](#estructura-y-contenido)
+1. [Etiquetas HTML](#Etiquetas-html)
+1. [Semántica](#semántica)
+1. [Buenas Prácticas de Código HTML](#buenas-prácticas-de-código-html)
+1. [Estructura Básica HTML5](#estructura-básica-html5)
+1. [Más Info](#más-info)
 
-## ESTRUCTURA Y CONTENIDO
+
+## Estructura y Contenido
 
 * Lenguaje de marcado basado en etiquetas y atributos, nos define estructura y contenido
 * El contenido es el Rey
@@ -13,11 +21,18 @@
 * La semántica de nuestras etiquetas la define el contenido y su distribución
 * Los motores de búsqueda son ciegos, si tu contenido esta bien estructurado, tu contenido será bien posicionado
 
-## ETIQUETAS HTML
+**[⬆ regresar al índice](#Índice)**
+
+
+## Etiquetas HTML
+
 [Tabla periódica de las etiquetas HTML](http://zqsmm.qiniucdn.com/data/20110511083224/index.html)
 ![Tabla de las Etiquetas de HTML](http://bextlan.com/img/para-cursos/periodic-table.png)
 
-## SEMÁNTICA
+**[⬆ regresar al índice](#Índice)**
+
+
+## Semántica
 
 La semántica es sólo una de las 8 implementaciones de [HTML5](https://www.w3.org/html/logo/)
 
@@ -25,7 +40,7 @@ Con las etiquetas semánticas mejoramos la definición de nuestro contenido, es 
 
 Recuerda que las etiquetas semánticas no tienen una posición fija en el layout, quien determina la estructura es el contenido
 
-### ETIQUETAS SEMÁNTICAS Y ESTRUCTURALES
+### Etiquetas semánticas y estructurales
 
 * **`<section>`**: Contenido genérico estructurado
 * **`<article>`**: Contenido estructural distribuible de manera independiente
@@ -37,19 +52,23 @@ Recuerda que las etiquetas semánticas no tienen una posición fija en el layout
 * **`<figure>`**: Sección de contenido visual, múltiples medios
 * **`<figcaption>`**: Leyenda o pié relativo al contenido visual de FIGURE, uno FIGCAPTION por cada FIGURE, puede contener semántica
 
-### EJEMPLO DE SEMÁNTICA HTML5
+### Ejemplo de semántica HTML5
+
 ![Semántica HTML5](http://bextlan.com/img/para-cursos/semantic-html5.jpg)
 
-## BUENAS PRÁCTICAS DE CÓDIGO HTML
+**[⬆ regresar al índice](#Índice)**
 
-### Especificar:
+
+## Buenas Prácticas de Código HTML
+
+### Especificar
 
 * Tipo de documento HTML5
 * Atributo de idioma
 * Juego de caractéres
 * Area de Visualización
     
-### Definir:
+### Definir
 
 * Título único máx 65 caractéres
 * Descripción única máx 156 caractéres
@@ -65,7 +84,10 @@ Recuerda que las etiquetas semánticas no tienen una posición fija en el layout
     * title, alt
     * aria-*, role
 
-## ESTRUCTURA BÁSICA HTML5
+**[⬆ regresar al índice](#Índice)**
+
+
+## Estructura Básica HTML5
 ~~~~~~~~~~~~~~
 	<!DOCTYPE html>
 	<html lang="es">
@@ -88,9 +110,14 @@ Recuerda que las etiquetas semánticas no tienen una posición fija en el layout
 	</html>
 ~~~~~~~~~~~~~~
 
+**[⬆ regresar al índice](#Índice)**
+
+
 ## Más Info
 * [Guía de Referencia HTML en MDN](https://developer.mozilla.org/es/docs/Web/HTML)
 * [Introducción a HTML](http://librosweb.es/libro/xhtml/)
 * [Guía de Buenas Prácticas en Código Front end](http://mdo.github.io/code-guide/)
 * [La dieta del Navegador](https://browserdiet.com/es/)
 * [Can I Use](http://caniuse.com/)
+
+**[⬆ regresar al índice](#Índice)**
