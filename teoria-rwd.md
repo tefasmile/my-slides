@@ -42,7 +42,7 @@ El concepto de **One Web** hace referencia a la idea de construir una web para t
 
 
 ## Concepto 
-### en 2010 - 2011
+### En 2010 - 2011
 Formalmente **Responsive Web Design** fue un término acuñado el 25 de mayo de 2010 por [Ethan Marcotte](https://twitter.com/beep) en su artículo [Responsive Web Design](http://alistapart.com/article/responsive-web-design) publicado en [A List Apart](http://alistapart.com/about) y posteriormente argumentado en el [libro de mismo nombre](https://abookapart.com/products/responsive-web-design) publicado en 2011.
 
 En dichas fechas (2010-2011) se presenta como una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de los sitios y aplicaciones web al dispositivo que se esté utilizando para visualizarlos.
