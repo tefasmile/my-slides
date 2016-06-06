@@ -1,21 +1,40 @@
-# Conceptos Básicos de Base de Datos
-## Dato
+# Bases de Datos
+
+## Índice
+1. [Conceptos Básicos](#conceptos-básicos)
+1. [Sistemas Gestores de Bases de Datos](#sistemas-gestores-de-bases-de-datos)
+1. [MySQL](#mysql)
+1. [Modelo Entidad-Relación](#modelo-entidad-relación)
+1. [Normalización de Bases de Datos](#normalización-de-bases-de-datos)
+1. [Sintaxis SQL](#sintaxis-sql)
+1. [Sentencias de Objetos](#sentencias-de-objetos)
+1. [Sentencias de Datos](#sentencias-de-datos)
+
+**[⬆ regresar al índice](#Índice)**
+
+## Conceptos Básicos
+
+### Dato
 Mínima unidad de Información
 Es un valor (numérico, alfabético, algorítmico, espacial, etc)  que por sí sólo no dice mucho
 
-## Información
+### Información
 Conjunto organizado de datos procesados, que constituyen un mensaje que cambia el estado de conocimiento del sujeto o sistema que recibe dicho mensaje
 
-## Base de Datos
+### Base de Datos
 Son bancos de información que contienen datos relativos a diversas temáticas y categorizados de distinta manera, pero que comparten entre sí algún tipo de vínculo o relación que busca ordenarlos y clasificarlos en conjunto
 
-##Lógica de Negocio
+### Lógica de Negocio
 Es la parte de un sistema que se encarga de codificar las reglas de funcionamiento del mundo real que determinan como la información puede ser creada, mostrada, cambiada y eliminada. 
 Son rutinas que realizan entradas de datos, consultas a los datos, generación de informes y más específicamente todo el procesamiento que se realiza detrás de la aplicación visible para el usuario (Backend)
 
+**[⬆ regresar al índice](#Índice)**
 
-#Sistemas Gestores de Bases de Datos (SGBD):
-##Ejemplos
+
+## Sistemas Gestores de Bases de Datos
+
+### Ejemplos
+
 * La agenda de la Abuela
 * Excel
 * Access
@@ -33,7 +52,8 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 * Neo4j
 * GraphDB
 
-## Tipos 
+### Tipos de SGBD
+
 * SQL (Structured Query Languaje)
 	* Transaccionales: Access, MySQL, MariaDB, Oracle, MS SQL Server, PostgreSQL, Informix
 * NoSQL (Not only SQL)
@@ -41,17 +61,22 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 	* Clave-Valor: Redis, Cassandra
 	* De Grafos: Neo4j, GraphDB
 
+**[⬆ regresar al índice](#Índice)**
 
-# Conceptos de BDs SQL
+
+## MySQL
+
+### Conceptos de BDs SQL
+
 * Una BD tiene Tablas
 * Una Tabla tiene Campos(columnas) y Registros(filas)
 	* El conjunto de campos genera un Registro
 	* Campo - un dato que no dice mucho
 	* Registro - conjunto de campos que genera información
 
+### Herramientas de Gestión
 
-# Herramientas de Gestión MySQL
-## Terminal de comandos
+#### Terminal
 	windows: cd c:/xampp/mysql/bin
 	mac: cd /Applications/XAMPP/bin
 	mysql -u root -p
@@ -64,19 +89,22 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 	SELECT campos_tabla FROM nombre_tabla;
 	SELECT * FROM nombre_tabla;
 
-## WebApp
+#### WebApp
 * [phpMyAdmin](https://www.phpmyadmin.net/) teniendo [XAMPP](http://localhost/phpmyadmin)
 
-## Software
+#### Software
 * [MySQL WorkBench](https://www.mysql.com/products/workbench/) (libre)
 * [Navicat](http://www.navicat.com/es) (pago)
 
-## Documentación MySQL
+### Documentación
 * [Documentación Oficial de MySQL](http://dev.mysql.com/doc/)
 * [MySQL con Clase](http://mysql.conclase.net/curso/index.php)
 
+**[⬆ regresar al índice](#Índice)**
 
-# Modelo Entidad-Relación
+
+## Modelo Entidad-Relación
+
 Es un diagrama que permite representar las entidades relevantes de un sistema de información así como sus interrelaciones y propiedades
 
 Formalmente, los diagramas ER son un lenguaje gráfico para describir conceptos. Informalmente, son simples dibujos o gráficos que describen información que trata un sistema de información y el software que lo automatiza
@@ -91,7 +119,8 @@ Elementos del Modelo Entidad-Relación
 * **Relación**
 	Describe la dependencia entre entidades o permite la asociación de las mismas; pe tenemos 2 entidades CLIENTE y HABITACIÓN, una relación sería que el cliente 'Pepito' tiene 'ocupada' la habitación '519'. Se representan por medio de un verbo de acción dentro de un rombo que une entidades
 
-## Tipos de Relaciones:
+### Tipos de Relaciones:
+
 * **1 a 1**
 	Un esposo(e) está casado(r) con una única esposa(e) y viceversa
 * **1 a M**
@@ -99,7 +128,8 @@ Elementos del Modelo Entidad-Relación
 * **M a M**
 	Un cliente(e) puede comprar(r) varios productos(e) y un producto(e) puede ser comprado(r) por varios clientes(e)
 
-## Herramientas para modelar:
+### Herramientas para modelar:
+
 * Cuaderno y Lápiz
 * Microsoft Visio
 * Cualquier Software de Diseño
@@ -107,8 +137,11 @@ Elementos del Modelo Entidad-Relación
 * [Lucidchart](https://www.lucidchart.com/)
 * [Cacoo](https://cacoo.com/)
 
+**[⬆ regresar al índice](#Índice)**
 
-# Normalización de BDs
+
+## Normalización de Bases de Datos
+
 El proceso de normalización de bases de datos consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el modelo entidad-relación
 
 Las bases de datos relacionales se normalizan para:
@@ -126,7 +159,7 @@ Existen 3 niveles de normalización que deben respetarse para poder decir que nu
 
 Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
-## Sin Normalizar:
+### Sin Normalizar:
 
 **ALUMNOS**
 
@@ -137,7 +170,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | Pepito  |	Licenciatura  |	Diseño Digital	 | MySQL	 | PHP       |
  -------------------------------------------------------------------- 
 
-## Primera Forma Normal:
+### Primera Forma Normal:
 * NO repetir campos en las tablas (atributos atómicos)
 
 **ALUMNOS**
@@ -151,7 +184,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | 2			| Pepito		| Licenciatura	| Diseño Digital   | PHP     |
  ------------------------------------------------------------------------
 
-## Segunda Forma Normal:
+### Segunda Forma Normal:
 
 * Se debe aplicar la 1FN
 * Cada campo de la tabla debe depender de una clave única, si tuvieramos alguna columna que se repite a lo largo de todos los registros, dichos datos deberian atomizarse en una nueva tabla
@@ -176,12 +209,12 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | 4			 | 2	     | PHP            |
  -----------------------------------------
 
-## Tercera Forma Normal:
+### Tercera Forma Normal:
 
 * Se debe aplicar la 1FN y 2FN
 * Los campos que NO son clave NO deben tener dependencias
 
-## Forma Normal Boyce-Codd (FNBC)
+### Forma Normal Boyce-Codd (FNBC)
 
 * Se debe aplicar la 1FN, 2FN y 3FN
 * Es una versión mejorada de la 3FN
@@ -217,7 +250,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | 4			 | 2	     | PHP            |
  -----------------------------------------
 
-## Cuarta Forma Normal:
+### Cuarta Forma Normal:
 
 * Se debe aplicar la FNBC
 * La 4FN aplica únicamente para relaciones M a M, y nos ayuda a eliminar la redundancia de información generada por dicho tipo de relación
@@ -260,7 +293,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | 4		 | 2		 | 2		  |
  ---------------------------------
 
-## Quinta Forma Normal:
+### Quinta Forma Normal:
 
 * Se debe aplicar la 1FN, 2FN, 3FN y 4FN
 * Existe otro nivel de normalización que se aplica con poca frecuencia y en la mayoria de los casos no es necesario para obtener la mejor funcionalidad de nuestra estructura de datos. Su principio sugiere:
@@ -271,7 +304,10 @@ Los beneficios de aplicar la 5FN asegura que no se haya creado ninguna columna e
 
 Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja estructura de datos, en modelos pequeños no se recomienda usar
 
-# Sintaxis SQL
+**[⬆ regresar al índice](#Índice)**
+
+
+## Sintaxis SQL
 
 Tipos de Sentencias SQL:
 * Sentencias de Objetos
@@ -279,6 +315,8 @@ Tipos de Sentencias SQL:
 
 ### Concepto de CRUD (Create - Read - Update - Delete)
 ![CRUD](http://bextlan.com/img/para-cursos/crud.png)
+
+**[⬆ regresar al índice](#Índice)**
 
 ## Sentencias de Objetos
 Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
@@ -322,6 +360,8 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 		* SET NULL
 		* NO ACTION
 * [Encriptación](http://dev.mysql.com/doc/refman/5.7/en/encryption-functions.html)
+
+**[⬆ regresar al índice](#Índice)**
 
 ## Sentencias de Datos
 
@@ -423,3 +463,5 @@ Datos de 2 o más tablas
 		ON t1.field1 = t2.field4
 		WHERE MATCH(t1.field1, t1.field2, t2.field1, t2.field4)
 		AGAINST('a_search' IN BOOLEAN MODE);
+
+**[⬆ regresar al índice](#Índice)**
