@@ -313,7 +313,12 @@ Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja est
 * Sentencias de Objetos
 * Sentencias de Datos
 
-### Concepto de CRUD (Create - Read - Update - Delete)
+### Concepto de CRUD
+* Create
+* Read
+* Update
+* Delete
+
 ![CRUD](http://bextlan.com/img/para-cursos/crud.png)
 
 **[⬆ regresar al índice](#Índice)**
