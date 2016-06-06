@@ -309,9 +309,9 @@ Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja est
 
 ## Sintaxis SQL
 
-Tipos de Sentencias SQL:
-* Sentencias de Objetos
-* Sentencias de Datos
+### Tipos de Sentencias SQL
+#### Sentencias de Objetos
+#### Sentencias de Datos
 
 ### Concepto de CRUD (Create - Read - Update - Delete)
 ![CRUD](http://bextlan.com/img/para-cursos/crud.png)
