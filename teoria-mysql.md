@@ -376,7 +376,7 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 * Delete - **`DELETE`**
 
 ### CREATE
-Insertar 1 Registro
+Insertar un registro
 
 	INSERT INTO table (field_1, field_2, ..., field_n) 
 		VALUES (value_1, value2, ..., value_n);
