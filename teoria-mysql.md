@@ -313,7 +313,7 @@ Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja est
 * Sentencias de Objetos
 * Sentencias de Datos
 
-### Concepto de CRUD
+### Concepto CRUD
 * Create
 * Read
 * Update
