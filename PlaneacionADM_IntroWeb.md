@@ -1,5 +1,5 @@
 # Módulo: Introducción al Diseño Web
-![Diseño Web](http://bextlan.com/v4/themes/v4/img/cursos/web.jpg)
+![Diseño Web](http://bextlan.com/img/para-cursos/web.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 El alumno se aproxima a los elementos básicos que conforman la tecnología web desde el mundo del diseño, enfatizando los conceptos y modelos que habilitan la plataforma tecnológica.
@@ -7,10 +7,9 @@ El alumno se aproxima a los elementos básicos que conforman la tecnología web 
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
 ## :books: Fuentes bibliográficas del curso:
 * [Libros Web](http://librosweb.es/)

@@ -1,5 +1,5 @@
 # Materia: WordPress
-![WordPress](http://bextlan.com/img/cursos/wordpress.jpg)
+![WordPress](http://bextlan.com/img/para-cursos/wordpress.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 Al final del curso el estudiante tendrá los conocimientos necesarios para desarrollar sitios dinámicos y administrables con WordPress.
@@ -7,10 +7,9 @@ Al final del curso el estudiante tendrá los conocimientos necesarios para desar
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
 ## :books: Fuentes bibliográficas del curso:
 * [Buenas Prácticas de Código PHP en WP](https://make.wordpress.org/core/handbook/coding-standards/php/)

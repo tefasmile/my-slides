@@ -1,5 +1,5 @@
 # Materia: Buenas Prácticas de Diseño Web Actual
-![Diseño Web Actual](http://bextlan.com/v4/themes/v4/img/cursos/web.jpg)
+![Diseño Web Actual](http://bextlan.com/img/para-cursos/web.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 Al final del curso el estudiante aprenderá a aplicar buenas prácticas de Diseño Web Actual
@@ -7,8 +7,7 @@ Al final del curso el estudiante aprenderá a aplicar buenas prácticas de Dise�
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
 * **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 

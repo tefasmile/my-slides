@@ -1,5 +1,5 @@
 # Materia: Fundamentos de Programación Web (JavaScript)
-![JavaScript](http://bextlan.com/v4/themes/v4/img/tutoriales/javascript.jpg)
+![JavaScript](http://bextlan.com/img/para-cursos/javascript.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 Al finalizar el curso el estudiante aprenderá los fundamentos de programación web con el lenguaje JavaScript
@@ -7,10 +7,9 @@ Al finalizar el curso el estudiante aprenderá los fundamentos de programación 
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
 ## :books: Fuentes bibliográficas del curso:
 * [Introducción a JavaScript](http://librosweb.es/libro/javascript/)

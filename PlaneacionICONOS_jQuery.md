@@ -1,5 +1,5 @@
 # Materia: Diseño de Interfaces Enriquecidas (jQuery)
-![jQuery](http://bextlan.com/v4/themes/v4/img/cursos/jquery.jpg)
+![jQuery](http://bextlan.com/img/para-cursos/jquery.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 Al final del curso el estudiante tendrá los conocimientos necesarios para proveer de interactividad y dinamismos sitios y aplicaciones web con la librería JavaScript: jQuery
@@ -7,10 +7,9 @@ Al final del curso el estudiante tendrá los conocimientos necesarios para prove
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
 ## :books: Fuentes bibliográficas del curso:
 * [jQuery.com](http://jquery.com/)

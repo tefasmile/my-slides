@@ -1,5 +1,5 @@
 # Materia: Sitios Web Dinámicos
-![MySQL + PHP](http://bextlan.com/v4/themes/v4/img/cursos/poo-php-mysql.jpg)
+![MySQL + PHP](http://bextlan.com/img/para-cursos/poo-php-mysql.jpg)
 
 ## :chart_with_upwards_trend: Objetivo de la Materia:
 Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP y el gestor MySQL, para el desarrollo de bases de datos y su integración en sitios web dinámicos.
@@ -7,10 +7,9 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
-* Fundador de **[Bextlán](http://bextlan.com)**
-* Maratonista :runner:
+* Creador de **[Bextlán](http://bextlan.com)** y **[Responsimple](http://jonmircha.github.io/responsimple/)**
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
 
 ## :books: Fuentes bibliográficas del curso:
 * [Documentación Oficial de PHP](http://php.net/manual/es/)
