@@ -1,6 +1,6 @@
 # ECMAScript 6
 
-![ECMAScript 6](http://bextlan.com/img/para-cursos/ecmascript-6-logo.jpg)
+![ECMAScript 6](http://bextlan.com/img/para-cursos/es6-logo.jpg)
 
 1. [ECMAScript](#ecmascript)
 1. [Características ECMAScript 6](#características-ecmascript-6)
@@ -65,7 +65,7 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 
 #### Constantes
 
-Una constantes es un tipo INMUTABLE, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente
+Una constantes es un tipo INMUTABLE, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente.
 
 	(function() {
 		'use strict';
