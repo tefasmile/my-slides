@@ -74,6 +74,7 @@
 
 En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, se diferencia de `var` en que el scope de una variable definida con `let` es, el bloque en el cual se encuentra la variable y no la función.
 
+```JavaScript
 	(function() {
 		'use strict';
 
@@ -92,6 +93,7 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 		
 		console.log(i); // Imprime Uncaught ReferenceError: i is not defined
 	})();
+```
 
 #### Constantes
 
