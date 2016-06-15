@@ -1,4 +1,5 @@
 # ECMAScript 6
+# aka ES6 o ES2015
 
 ![ECMAScript 6](http://bextlan.com/img/para-cursos/es6-logo.jpg)
 
@@ -6,8 +7,8 @@
 1. [ECMAScript](#ecmascript)
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
-	1. [](#)
-	1. [](#)
+	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
+	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. [](#)
 	1. [](#)
@@ -40,6 +41,7 @@
 ## Características ECMAScript 6
 
 ### Variables de bloque y constantes
+### aka let y const
 
 #### Variables de bloque
 
@@ -66,7 +68,7 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 
 #### Constantes
 
-Una constantes es un tipo INMUTABLE, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente.
+Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente.
 
 	(function() {
 		'use strict';
@@ -90,6 +92,49 @@ Una constantes es un tipo INMUTABLE, NO puede cambiar una vez definida, se usa l
 		const D = document;
 		console.log(D);
 		console.log(D.documentElement);
+	})();
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Plantillas de cadenas de texto
+### aka Template Strings
+
+Los template string son una forma más fácil de crear strings con variables en medio o strings multilínea.
+
+	(function() {
+		'use strict';
+
+		let saludo = `Hola soy un Template String`;
+		console.log(saludo);
+
+		//variables en strings
+		let nombre = 'Jonathan';
+		console.log(`Hola ${nombre}`);
+
+		//incluso pueden ejecutar funciones o colocar expresiones
+		console.log(`Hola ${nombre}, tienes ${30 + 2} años`);
+
+		//strings multilínea
+		let mensaje = `No es quien seas en el interior,
+		tus actos son los que te definen...
+		Batman`;
+		console.log(mensaje);
+	})();
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Números octales y binarios
+
+	(function() {
+		'use strict';
+
+		//octales
+		console.log(0o17);
+
+		//binarios
+		console.log(0b100);
 	})();
 
 **[⬆ regresar al índice](#Índice)**
