@@ -75,24 +75,24 @@
 En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, se diferencia de `var` en que el scope de una variable definida con `let` es, el bloque en el cual se encuentra la variable y no la función.
 
 ```JavaScript
-	(function() {
-		'use strict';
+(function() {
+	'use strict';
 
-		let x = 'Hola kEnAi';
-	    
-		if(true) {
-			let x = 'Hola Jon';
-			console.log(x);  // Imprime en consola Hola Jon
-		}
+	let x = 'Hola kEnAi';
+    
+	if(true) {
+		let x = 'Hola Jon';
+		console.log(x);  // Imprime en consola Hola Jon
+	}
 
-		console.log(x);  // Imprime en consola Hola kEnAi
+	console.log(x);  // Imprime en consola Hola kEnAi
 
-		for (let i = 0; i < 5; i++) {
-			console.log(i); // Imprime del 0 al 4
-		};
-		
-		console.log(i); // Imprime Uncaught ReferenceError: i is not defined
-	})();
+	for (let i = 0; i < 5; i++) {
+		console.log(i); // Imprime del 0 al 4
+	};
+	
+	console.log(i); // Imprime Uncaught ReferenceError: i is not defined
+})();
 ```
 
 #### Constantes
