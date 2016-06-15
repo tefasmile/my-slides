@@ -8,7 +8,7 @@
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
-	1. [Objetos Literales](#objetos-literales)
+	1. [Objetos literales](#objetos-literales)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. [](#)
@@ -144,8 +144,19 @@ Los template string son una forma más fácil de crear strings con variables den
 	let nombre = 'Jonathan';
 	console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
 
-	//incluso pueden ejecutar funciones o colocar expresiones
+	//incluso pueden ejecutar expresiones o funciones
 	console.log(`Hola ${nombre}, tienes ${30 + 2} años`); //Imprime Hola Jonathan, tienes 32 años
+
+	let estaciones = ['Primavera', 'Verano', 'Otoño', 'Invierno'],
+		ol = `<ol>
+			${
+				estaciones.map(function (estacion) {
+					return `<li>${estacion}</li>`;
+				}).join('')
+			}
+		</ol>`;
+	
+	console.log(ol);
 
 	//strings multilínea
 	let mensaje = `No es quien seas en el interior,
