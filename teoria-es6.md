@@ -99,29 +99,31 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 
 Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente.
 
-	(function() {
-		'use strict';
-		
-		const DIEZ = 10;
-		DIEZ = 5;
-		console.log(DIEZ); // Imprime Uncaught TypeError: Assignment to constant variable
+```JavaScript
+(function() {
+	'use strict';
+	
+	const DIEZ = 10;
+	DIEZ = 5;
+	console.log(DIEZ); // Imprime Uncaught TypeError: Assignment to constant variable
 
-		const hola = 'hola mundo';
-		hola = 'hola mundo'; // Imprime Uncaught TypeError: Assignment to constant variable
+	const hola = 'hola mundo';
+	hola = 'hola mundo'; // Imprime Uncaught TypeError: Assignment to constant variable
 
-		const PI;
-		PI = 3.15; //Imprime Missing initializer in const declaration
+	const PI;
+	PI = 3.15; //Imprime Missing initializer in const declaration
 
-		const obj = {};
-		obj.prop = 'x';
-		console.log(obj); //Imprime { prop: 'x' }
-		obj.prop = 'y';
-		console.log(obj); //Imprime { prop: 'y' }
+	const obj = {};
+	obj.prop = 'x';
+	console.log(obj); //Imprime { prop: 'x' }
+	obj.prop = 'y';
+	console.log(obj); //Imprime { prop: 'y' }
 
-		const D = document;
-		console.log(D); //Imprime el objeto document
-		console.log(D.documentElement); //Imprime el tag <html>
-	})();
+	const D = document;
+	console.log(D); //Imprime el objeto document
+	console.log(D.documentElement); //Imprime el tag <html>
+})();
+```
 
 **[⬆ regresar al índice](#Índice)**
 
@@ -131,29 +133,31 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 
 Los template string son una forma más fácil de crear strings con variables dentro (interpolación) o strings multilínea.
 
-	(function() {
-		'use strict';
+```JavaScript
+(function() {
+	'use strict';
 
-		let saludo = `Hola soy un Template String`;
-		console.log(saludo); //Imprime Hola soy un Template String
+	let saludo = `Hola soy un Template String`;
+	console.log(saludo); //Imprime Hola soy un Template String
 
-		//variables en strings (interpolación)
-		let nombre = 'Jonathan';
-		console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
+	//variables en strings (interpolación)
+	let nombre = 'Jonathan';
+	console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
 
-		//incluso pueden ejecutar funciones o colocar expresiones
-		console.log(`Hola ${nombre}, tienes ${30 + 2} años`); //Imprime Hola Jonathan, tienes 32 años
+	//incluso pueden ejecutar funciones o colocar expresiones
+	console.log(`Hola ${nombre}, tienes ${30 + 2} años`); //Imprime Hola Jonathan, tienes 32 años
 
-		//strings multilínea
-		let mensaje = `No es quien seas en el interior,
-		tus actos son los que te definen...
-		Batman`;
-		console.log(mensaje); 
-		//Imprime 
-		No es quien seas en el interior,
-		tus actos son los que te definen...
-		Batman
-	})();
+	//strings multilínea
+	let mensaje = `No es quien seas en el interior,
+	tus actos son los que te definen...
+	Batman`;
+	console.log(mensaje); 
+	//Imprime 
+	No es quien seas en el interior,
+	tus actos son los que te definen...
+	Batman
+})();
+```
 
 **[⬆ regresar al índice](#Índice)**
 
@@ -161,75 +165,80 @@ Los template string son una forma más fácil de crear strings con variables den
 ### Objetos literales
 
 #### Atajos en la escritura de atributos y métodos
+
+```JavaScript	
+(function() {
+	'use strict';
 	
-	(function() {
-		'use strict';
-		
-		//Antes
-		var nombre = 'kEnAi',
-			edad = 3;
+	//Antes
+	var nombre = 'kEnAi',
+		edad = 3;
 
-		var perro = {
-			nombre : nombre,
-			edad : edad,
-			ladrar : function () {
-				alert('guau guau!!!');
-			}
-		};
+	var perro = {
+		nombre : nombre,
+		edad : edad,
+		ladrar : function () {
+			alert('guau guau!!!');
+		}
+	};
 
-		console.log(perro);
-		perro.ladrar();
+	console.log(perro);
+	perro.ladrar();
 
-		//Ahora
-		let nombre = 'kEnAi',
-			edad = 3;
+	//Ahora
+	let nombre = 'kEnAi',
+		edad = 3;
 
-		const perro = {
-			nombre,
-			edad,
-			ladrar() {
-				alert('guau guau!!!');
-			}
-		};
+	const perro = {
+		nombre,
+		edad,
+		ladrar() {
+			alert('guau guau!!!');
+		}
+	};
 
-		console.log(perro);
-		perro.ladrar();
-	})();
+	console.log(perro);
+	perro.ladrar();
+})();
+```
 
 #### Nombres de atributos y métodos calculados (o computados)
+```JavaScript
+(function() {
+	'use strict';
+	
+	let nombreAtributo = 'nombre',
+		nombreOtroAtributo = 'ad',
+		nombreMetodo = 'ladrar';
 
-	(function() {
-		'use strict';
-		
-		let nombreAtributo = 'nombre',
-			nombreOtroAtributo = 'ad',
-			nombreMetodo = 'ladrar';
+	const perro = {
+		[nombreAtributo] : 'kEnAi',
+		[`ed${nombreOtroAtributo}`] : 3,
+		[nombreMetodo]() {
+			alert('guau guau!!!');
+		}
+	};
 
-		const perro = {
-			[nombreAtributo] : 'kEnAi',
-			[`ed${nombreOtroAtributo}`] : 3,
-			[nombreMetodo]() {
-				alert('guau guau!!!');
-			}
-		};
-
-		console.log(perro);
-		perro.ladrar();
-	})();
+	console.log(perro);
+	perro.ladrar();
+})();
+```
 
 **[⬆ regresar al índice](#Índice)**
 
 
 ### Números octales y binarios
 
-	(function() {
-		'use strict';
+```JavaScript
+(function() {
+	'use strict';
 
-		//octales
-		console.log(0o17); //Imprime 15
+	//octales
+	console.log(0o17); //Imprime 15
 
-		//binarios
-		console.log(0b100); //Imprime 4
-	})();
+	//binarios
+	console.log(0b100); //Imprime 4
+})();
+```
 
 **[⬆ regresar al índice](#Índice)**
