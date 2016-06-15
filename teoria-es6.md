@@ -156,7 +156,7 @@ Los template string son una forma más fácil de crear strings con variables den
 			}
 		</ol>`;
 	
-	console.log(ol);
+	console.log(ol); //Imprime <ol><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ol>
 
 	//strings multilínea
 	let mensaje = `No es quien seas en el interior,
