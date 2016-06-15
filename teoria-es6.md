@@ -9,7 +9,7 @@
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
 	1. [Objetos literales](#objetos-literales)
-	1. [Destructuración](#destructuracion)
+	1. [Destructuración](#destructuración)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. Arrow Functions
@@ -254,7 +254,7 @@ Los template string son una forma más fácil de crear cadenas con variables den
 
 ### aka Destructuring
 
-Nuevas formas de asignar valores a Arrays y a Objetos. 
+Nuevas formas de asignar valores a Arrays y Objetos. 
 
 ```JavaScript
 (function() {
