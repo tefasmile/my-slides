@@ -121,7 +121,7 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 
 	const D = document;
 	console.log(D); //Imprime el objeto document
-	console.log(D.documentElement); //Imprime el tag <html>
+	console.log(D.documentElement); //Imprime el elemento <html>
 })();
 ```
 
@@ -193,8 +193,8 @@ Los template string son una forma más fácil de crear strings con variables den
 		}
 	};
 
-	console.log(perro);
-	perro.ladrar();
+	console.log(perro); //Imprime Object {nombre: "kEnAi", edad: 3}
+	perro.ladrar(); //Manda alerta
 
 	//Ahora
 	let nombre = 'kEnAi',
@@ -208,8 +208,8 @@ Los template string son una forma más fácil de crear strings con variables den
 		}
 	};
 
-	console.log(perro);
-	perro.ladrar();
+	console.log(perro); //Imprime Object {nombre: "kEnAi", edad: 3}
+	perro.ladrar(); //Manda alerta
 })();
 ```
 
@@ -230,8 +230,8 @@ Los template string son una forma más fácil de crear strings con variables den
 		}
 	};
 
-	console.log(perro);
-	perro.ladrar();
+	console.log(perro); //Imprime Object {nombre: "kEnAi", edad: 3}
+	perro.ladrar(); //Manda alerta
 })();
 ```
 
