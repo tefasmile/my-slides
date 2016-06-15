@@ -2,6 +2,7 @@
 
 ![ECMAScript 6](http://bextlan.com/img/para-cursos/es6-logo.jpg)
 
+## Índice
 1. [ECMAScript](#ecmascript)
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
