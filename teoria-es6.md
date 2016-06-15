@@ -131,7 +131,7 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 ### Plantillas de cadenas de texto
 ### aka Template Strings
 
-Los template string son una forma más fácil de crear strings con variables dentro (interpolación) o strings multilínea.
+Los template string son una forma más fácil de crear cadenas con variables dentro (interpolación), generar cadenas multilínea, ejecutar expresiones, funciones y etiquetados.
 
 ```JavaScript
 (function() {
