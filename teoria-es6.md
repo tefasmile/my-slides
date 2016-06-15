@@ -8,10 +8,37 @@
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
+	1. [Objetos Literales](#objetos-literales)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. [](#)
-	1. [](#)
+	1. Arrow Functions
+	1. Promises
+	1. Classes
+		1. Herencia
+		1. Métodos estáticos
+		1. Getters y setters
+	1. Strings Methods
+	1. Replacing IIFEs with Blocks
+	1. Destructuring
+	1. Parametros por defecto
+	1. Parametros rest
+	1. Operador de Propagación
+	1. Módulos
+	1. 
+	1. Objeto Math
+	1. Métodos de Arrays
+	1. Métodos de Object
+	1. Símbolos
+	1. Iteradores
+	1. Generadores
+	1. Colecciones
+	1. Proxies
+	1. Reflection
+	1. Decoradores
+	1. Funciones async
+	1. Map, Weakmap, Set, Weakset
+1. Babel 
 
 
 ## ECMAScript
@@ -100,7 +127,7 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 ### Plantillas de cadenas de texto
 ### aka Template Strings
 
-Los template string son una forma más fácil de crear strings con variables en medio o strings multilínea.
+Los template string son una forma más fácil de crear strings con variables dentro (interpolación) o strings multilínea.
 
 	(function() {
 		'use strict';
@@ -108,7 +135,7 @@ Los template string son una forma más fácil de crear strings con variables en 
 		let saludo = `Hola soy un Template String`;
 		console.log(saludo); //Imprime Hola soy un Template String
 
-		//variables en strings
+		//variables en strings (interpolación)
 		let nombre = 'Jonathan';
 		console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
 
@@ -124,6 +151,68 @@ Los template string son una forma más fácil de crear strings con variables en 
 		No es quien seas en el interior,
 		tus actos son los que te definen...
 		Batman
+	})();
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Objetos literales
+
+#### Atajos en la escritura de atributos y métodos
+	
+	(function() {
+		'use strict';
+		
+		//Antes
+		var nombre = 'kEnAi',
+			edad = 3;
+
+		var perro = {
+			nombre : nombre,
+			edad : edad,
+			ladrar : function () {
+				alert('guau guau!!!');
+			}
+		};
+
+		console.log(perro);
+		perro.ladrar();
+
+		//Ahora
+		let nombre = 'kEnAi',
+			edad = 3;
+
+		const perro = {
+			nombre,
+			edad,
+			ladrar() {
+				alert('guau guau!!!');
+			}
+		};
+
+		console.log(perro);
+		perro.ladrar();
+	})();
+
+#### Nombres de atributos y métodos calculados (o computados)
+
+	(function() {
+		'use strict';
+		
+		let nombreAtributo = 'nombre',
+			nombreOtroAtributo = 'ad',
+			nombreMetodo = 'ladrar';
+
+		const perro = {
+			[nombreAtributo] : 'kEnAi',
+			[`ed${nombreOtroAtributo}`] : 3,
+			[nombreMetodo]() {
+				alert('guau guau!!!');
+			}
+		};
+
+		console.log(perro);
+		perro.ladrar();
 	})();
 
 **[⬆ regresar al índice](#Índice)**
