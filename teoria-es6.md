@@ -260,6 +260,52 @@ Nuevas formas de asignar valores a Arrays y a Objetos.
 (function() {
 	'use strict';
 
+	//Destructuración de Arreglos
+	let numeros = [1, 2, 3];
+
+	//sin destructuración
+	let uno = numeros[0],
+		dos = numeros[1],
+		tres = numeros[2];
+
+	console.log(numeros, uno, dos, tres); Imprime [1, 2, 3] 1 2 3
+
+	//con destructuración
+	let [one, two, three] = numeros;
+
+	console.log(numeros, one, two, three); Imprime [1, 2, 3] 1 2 3
+
+	//Destructuración de Objetos
+	let persona = { nombre: 'Jonathan', apellido: 'MirCha' };
+	let { nombre, apellido } = persona;
+
+	console.log(persona); //Imprime Object {nombre: "Jonathan", apellido: "MirCha"}
+	console.log(nombre); //Imprime Jonathan
+	console.log(apellido); //Imprime MirCha
+
+	let datos = { correo: 'jonmircha@gmail.com', telefono: 5566778899 };
+
+	let { correo: email, telefono: phone } = datos;
+	
+	console.log(datos); //Imprime Object {correo: "jonmircha@gmail.com", telefono: 5566778899}
+	console.log(email); //Imprime jonmircha@gmail.com
+	console.log(phone); //Imprime 5566778899
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Tema
+
+### aka Tema
+
+Explicacion
+
+```JavaScript
+(function() {
+	'use strict';
+
 	
 })();
 ```
