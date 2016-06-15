@@ -9,8 +9,8 @@
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
 	1. [Objetos literales](#objetos-literales)
+	1. [Destructuración](#destructuracion)
 	1. [Números octales y binarios](#números-octales-y-binarios)
-	1. [](#)
 	1. [](#)
 	1. Arrow Functions
 	1. Promises
@@ -79,7 +79,7 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 	'use strict';
 
 	let x = 'Hola kEnAi';
-    
+
 	if(true) {
 		let x = 'Hola Jon';
 		console.log(x);  // Imprime en consola Hola Jon
@@ -140,13 +140,24 @@ Los template string son una forma más fácil de crear strings con variables den
 	let saludo = `Hola soy un Template String`;
 	console.log(saludo); //Imprime Hola soy un Template String
 
+	//strings multilínea
+	let mensaje = `No es quien seas en el interior,
+	tus actos son los que te definen...
+	Batman`;
+	console.log(mensaje); 
+	//Imprime 
+	No es quien seas en el interior,
+	tus actos son los que te definen...
+	Batman
+
 	//variables en strings (interpolación)
 	let nombre = 'Jonathan';
 	console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
 
-	//incluso pueden ejecutar expresiones o funciones
+	//ejecutar expresiones
 	console.log(`Hola ${nombre}, tienes ${30 + 2} años`); //Imprime Hola Jonathan, tienes 32 años
 
+	//ejecutar funciones
 	let estaciones = ['Primavera', 'Verano', 'Otoño', 'Invierno'],
 		ol = `<ol>
 			${
@@ -158,15 +169,16 @@ Los template string son una forma más fácil de crear strings con variables den
 	
 	console.log(ol); //Imprime <ol><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ol>
 
-	//strings multilínea
-	let mensaje = `No es quien seas en el interior,
-	tus actos son los que te definen...
-	Batman`;
-	console.log(mensaje); 
-	//Imprime 
-	No es quien seas en el interior,
-	tus actos son los que te definen...
-	Batman
+	//función de etiquetado
+	const etiqueta = function (cadena, variable) {
+		console.log(cadena);
+		console.log(variable);
+		console.log(cadena[0] + variable);
+	};
+
+	let nombre = 'Jon';
+
+	etiqueta`Hola ${nombre}`;
 })();
 ```
 
@@ -232,6 +244,23 @@ Los template string son una forma más fácil de crear strings con variables den
 
 	console.log(perro); //Imprime Object {nombre: "kEnAi", edad: 3}
 	perro.ladrar(); //Manda alerta
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Destructuración
+
+### aka Destructuring
+
+Nuevas formas de asignar valores a Arrays y a Objetos. 
+
+```JavaScript
+(function() {
+	'use strict';
+
+	
 })();
 ```
 
