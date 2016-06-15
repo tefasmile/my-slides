@@ -85,13 +85,13 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 
 		const obj = {};
 		obj.prop = 'x';
-		console.log(obj); // { prop: 'x' }
+		console.log(obj); //Imprime { prop: 'x' }
 		obj.prop = 'y';
-		console.log(obj); // { prop: 'y' }
+		console.log(obj); //Imprime { prop: 'y' }
 
 		const D = document;
-		console.log(D);
-		console.log(D.documentElement);
+		console.log(D); //Imprime el objeto document
+		console.log(D.documentElement); //Imprime el tag <html>
 	})();
 
 **[⬆ regresar al índice](#Índice)**
@@ -106,20 +106,24 @@ Los template string son una forma más fácil de crear strings con variables en 
 		'use strict';
 
 		let saludo = `Hola soy un Template String`;
-		console.log(saludo);
+		console.log(saludo); //Imprime Hola soy un Template String
 
 		//variables en strings
 		let nombre = 'Jonathan';
-		console.log(`Hola ${nombre}`);
+		console.log(`Hola ${nombre}`); //Imprime Hola Jonathan
 
 		//incluso pueden ejecutar funciones o colocar expresiones
-		console.log(`Hola ${nombre}, tienes ${30 + 2} años`);
+		console.log(`Hola ${nombre}, tienes ${30 + 2} años`); //Imprime Hola Jonathan, tienes 32 años
 
 		//strings multilínea
 		let mensaje = `No es quien seas en el interior,
 		tus actos son los que te definen...
 		Batman`;
-		console.log(mensaje);
+		console.log(mensaje); 
+		//Imprime 
+		No es quien seas en el interior,
+		tus actos son los que te definen...
+		Batman
 	})();
 
 **[⬆ regresar al índice](#Índice)**
@@ -131,10 +135,10 @@ Los template string son una forma más fácil de crear strings con variables en 
 		'use strict';
 
 		//octales
-		console.log(0o17);
+		console.log(0o17); //Imprime 15
 
 		//binarios
-		console.log(0b100);
+		console.log(0b100); //Imprime 4
 	})();
 
 **[⬆ regresar al índice](#Índice)**
