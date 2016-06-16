@@ -68,7 +68,7 @@
 # Características ECMAScript 6
 
 ## Variables de bloque y constantes
-## aka let y const
+### aka let y const
 
 ### Variables de bloque
 
@@ -128,7 +128,7 @@ Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se u
 **[⬆ regresar al índice](#Índice)**
 
 
-### Plantillas de cadenas de texto
+## Plantillas de cadenas de texto
 ### aka Template Strings
 
 Los template string son una forma más fácil de crear cadenas con variables dentro (interpolación), generar cadenas multilínea, ejecutar expresiones, funciones y etiquetados.
@@ -185,13 +185,13 @@ Los template string son una forma más fácil de crear cadenas con variables den
 **[⬆ regresar al índice](#Índice)**
 
 
-### Funciones Flecha
+## Funciones Flecha
 
 ### aka Arrow Functions
 
 Es una nueva forma de definir funciones, hay distintas variantes en la sintaxis:
 
-#### Función de un solo parámetro
+### Función de un solo parámetro
 
 Al crear una arrow function de un solo parámetro no es necesario escribír los paréntesis, tampoco es necesario escribír las llaves, esto se puede cuando la función es de una sola línea y devuelve un valor.
 
@@ -211,7 +211,7 @@ Al crear una arrow function de un solo parámetro no es necesario escribír los 
 })();
 ```
 
-#### Función de varios parámetros
+### Función de varios parámetros
 
 Cuando la función tenga más de un parámetro es necesario envolver el nombre de estos entre paréntesis.
 
@@ -231,7 +231,7 @@ Cuando la función tenga más de un parámetro es necesario envolver el nombre d
 })();
 ```
 
-#### Función sin parámetros
+### Función sin parámetros
 
 Cuando la función no reciba parámetros también son necesarios los paréntesis.
 
@@ -251,7 +251,7 @@ Cuando la función no reciba parámetros también son necesarios los paréntesis
 })();
 ```
 
-#### Función con cuerpo
+### Función con cuerpo
 
 Cuando la función tiene más de una línea (o no devuelve ningún valor) es necesario utilizar las llaves.
 
@@ -300,9 +300,9 @@ Cuando la función tiene más de una línea (o no devuelve ningún valor) es nec
 **[⬆ regresar al índice](#Índice)**
 
 
-### Objetos literales
+## Objetos literales
 
-#### Atajos en la escritura de atributos y métodos
+### Atajos en la escritura de atributos y métodos
 
 ```JavaScript	
 (function() {
@@ -340,7 +340,7 @@ Cuando la función tiene más de una línea (o no devuelve ningún valor) es nec
 })();
 ```
 
-#### Nombres de atributos y métodos calculados (o computados)
+### Nombres de atributos y métodos calculados (o computados)
 ```JavaScript
 (function() {
 	'use strict';
@@ -365,7 +365,7 @@ Cuando la función tiene más de una línea (o no devuelve ningún valor) es nec
 **[⬆ regresar al índice](#Índice)**
 
 
-### Destructuración
+## Destructuración
 
 ### aka Destructuring
 
@@ -411,7 +411,7 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 **[⬆ regresar al índice](#Índice)**
 
 
-### Tema
+## Tema
 
 ### aka Tema
 
@@ -428,7 +428,7 @@ Explicacion
 **[⬆ regresar al índice](#Índice)**
 
 
-### Tema
+## Tema
 
 ### aka Tema
 
@@ -445,7 +445,7 @@ Explicacion
 **[⬆ regresar al índice](#Índice)**
 
 
-### Números octales y binarios
+## Números octales y binarios
 
 ```JavaScript
 (function() {
