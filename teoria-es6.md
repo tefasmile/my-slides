@@ -8,11 +8,11 @@
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
+	1. [Funciones Flecha](#funciones-flecha)
 	1. [Objetos literales](#objetos-literales)
 	1. [Destructuración](#destructuración)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
-	1. Arrow Functions
 	1. Promises
 	1. Classes
 		1. Herencia
@@ -185,6 +185,121 @@ Los template string son una forma más fácil de crear cadenas con variables den
 **[⬆ regresar al índice](#Índice)**
 
 
+### Funciones Flecha
+
+### aka Arrow Functions
+
+Es una nueva forma de definir funciones, hay distintas variantes en la sintaxis:
+
+#### Función de un solo parámetro
+
+Al crear una arrow function de un solo parámetro no es necesario escribír los paréntesis, tampoco es necesario escribír las llaves, esto se puede cuando la función es de una sola línea y devuelve un valor.
+
+```JavaScript
+(function() {
+	'use strict';
+	
+	//Antes
+	var saludo = function (nombre) {
+		return 'Hola ' + nombre;
+	};
+	console.log( saludo('Jonathan') ); //Imprime Hola Jonathan
+
+	//Ahora
+	let saludo = nombre => `Hola ${nombre}`;
+	console.log( saludo('Jonathan') ); //Imprime Hola Jonathan
+})();
+```
+
+#### Función de varios parámetros
+
+Cuando la función tenga más de un parámetro es necesario envolver el nombre de estos entre paréntesis.
+
+```JavaScript
+(function() {
+	'use strict';
+	
+	//Antes
+	var sumar = function (a, b) {
+		return a + b;
+	};
+	console.log( sumar(10, 9) ); //Imprime 19
+
+	//Ahora
+	let sumar = (a, b) => a + b;
+	console.log( sumar(10, 9) ); //Imprime 19
+})();
+```
+
+#### Función sin parámetros
+
+Cuando la función no reciba parámetros también son necesarios los paréntesis.
+
+```JavaScript
+(function() {
+	'use strict';
+	
+	//Antes
+	var saludo = function () {
+		return 'Hola a tod@s';
+	};
+	console.log( saludo() ); //Imprime Hola a tod@s
+
+	//Ahora
+	let saludo = () => `Hola a tod@s`;
+	console.log( saludo() ); //Imprime Hola a tod@s
+})();
+```
+
+#### Función con cuerpo
+
+Cuando la función tiene más de una línea (o no devuelve ningún valor) es necesario utilizar las llaves.
+
+```JavaScript
+(function() {
+	'use strict';
+
+	//Antes
+	var fecha = new Date(),
+		hora = fecha.getHours();
+
+	var saludo = function (hr) {
+		if (hr <= 5) {
+			return 'No me jodas!!!';
+		} else if(hr >= 6 && hr <= 11) {
+			return 'Buenos días!!!';
+		} else if(hr >= 12 && hr <= 18) {
+			return 'Buenas tardes!!!';
+		} else {
+			return 'Buenas noches!!!';
+		}
+	};
+
+	console.log( saludo(hora) );
+
+	//Ahora
+	let fecha = new Date(),
+		hora = fecha.getHours();
+
+	let saludo = (hr) => {
+		if (hr <= 5) {
+			return 'No me jodas!!!';
+		} else if(hr >= 6 && hr <= 11) {
+			return 'Buenos días!!!';
+		} else if(hr >= 12 && hr <= 18) {
+			return 'Buenas tardes!!!';
+		} else {
+			return 'Buenas noches!!!';
+		}
+	};
+
+	console.log( saludo(hora) );
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
 ### Objetos literales
 
 #### Atajos en la escritura de atributos y métodos
@@ -268,12 +383,12 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 		dos = numeros[1],
 		tres = numeros[2];
 
-	console.log(numeros, uno, dos, tres); Imprime [1, 2, 3] 1 2 3
+	console.log(numeros, uno, dos, tres); //Imprime [1, 2, 3] 1 2 3
 
 	//con destructuración
 	let [one, two, three] = numeros;
 
-	console.log(numeros, one, two, three); Imprime [1, 2, 3] 1 2 3
+	console.log(numeros, one, two, three); //Imprime [1, 2, 3] 1 2 3
 
 	//Destructuración de Objetos
 	let persona = { nombre: 'Jonathan', apellido: 'MirCha' };
@@ -290,6 +405,23 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 	console.log(datos); //Imprime Object {correo: "jonmircha@gmail.com", telefono: 5566778899}
 	console.log(email); //Imprime jonmircha@gmail.com
 	console.log(phone); //Imprime 5566778899
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+### Tema
+
+### aka Tema
+
+Explicacion
+
+```JavaScript
+(function() {
+	'use strict';
+
+	
 })();
 ```
 
