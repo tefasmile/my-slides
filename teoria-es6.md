@@ -41,7 +41,7 @@
 1. Babel 
 
 
-## ECMAScript
+# ECMAScript
 
 * ECMAScript es el nombre del estándar internacional que define JavaScript
 * Definido por un comité técnico (TC-39) de ecma international.
@@ -65,12 +65,12 @@
 **[⬆ regresar al índice](#Índice)**
 
 
-## Características ECMAScript 6
+# Características ECMAScript 6
 
-### Variables de bloque y constantes
-### aka let y const
+## Variables de bloque y constantes
+## aka let y const
 
-#### Variables de bloque
+### Variables de bloque
 
 En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, se diferencia de `var` en que el scope de una variable definida con `let` es, el bloque en el cual se encuentra la variable y no la función.
 
@@ -95,7 +95,7 @@ En ES6 se agrega una nueva forma de definir variables usando la palabra `let`, s
 })();
 ```
 
-#### Constantes
+### Constantes
 
 Una constantes es un tipo **INMUTABLE**, NO puede cambiar una vez definida, se usa la palabra `const` en lugar de `var`, al igual que `let` su scope es de bloque, son tipos de sólo lectura y se le debe asignar un valor en el momento de su declaración. Son referencias inmutables, pero sus valores no necesariamente.
 
