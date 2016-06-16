@@ -8,7 +8,7 @@
 1. [Características ECMAScript 6](#características-ecmascript-6)
 	1. [Variables de bloque y constantes](#variables-de-bloque-y-constantes)
 	1. [Plantillas de cadenas de texto](#plantillas-de-cadenas-de-texto)
-	1. [Funciones Flecha](#funciones-flecha)
+	1. [Funciones flecha](#funciones-flecha)
 	1. [Objetos literales](#objetos-literales)
 	1. [Destructuración](#destructuración)
 	1. [Números octales y binarios](#números-octales-y-binarios)
@@ -185,7 +185,7 @@ Los template string son una forma más fácil de crear cadenas con variables den
 **[⬆ regresar al índice](#Índice)**
 
 
-## Funciones Flecha
+## Funciones flecha
 
 ### aka Arrow Functions
 
@@ -306,7 +306,7 @@ Cuando la función tiene más de una línea (o no devuelve ningún valor) es nec
 	//Ahora
 	let numeros = [1, 2, 3, 4];
 	
-	numeros.forEach( (num) => {
+	numeros.forEach((num) => {
 		console.log(num); //Imprime el número en turno
 		console.log(num * 10); //Imprime el número en turno por 10
 	});
@@ -327,7 +327,7 @@ Las arrow function tienen la capacidad de capturar el objeto `this` del contexto
 		this.nombre = nombre;
 		this.edad = 0;
 
-		setInterval( function () {
+		setInterval(function () {
 			//La función anónima define `this` como una instancia de ella misma
 			this.edad++;
 		}, 1000);
