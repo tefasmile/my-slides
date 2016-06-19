@@ -11,10 +11,10 @@
 	1. [Funciones flecha](#funciones-flecha)
 	1. [Objetos literales](#objetos-literales)
 	1. [Destructuración](#destructuración)
+	1. [Clases](clases)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. Promises
-	1. Classes
 		1. Herencia
 		1. Métodos estáticos
 		1. Getters y setters
@@ -486,19 +486,52 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 **[⬆ regresar al índice](#Índice)**
 
 
-## Tema
+## Clases
 
-### aka Tema
+### aka Classes
 
-Explicacion
+En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada a Objetos más facilmente (sin prototipos), soportan herencia, superclases, instancias, métodos estáticos y constructores.
+
+### Definición de clase, constructor e instancia de objetos
 
 ```JavaScript
 (function() {
 	'use strict';
 
-	
+	class Animal {
+		//El constructor es un método especial que se ejecuta en el momento de instanciar la clase
+		constructor(nombre, edad, genero) {
+			this.nombre = nombre;
+			this.edad = edad;
+			this.genero = genero;
+		}
+
+		comunicar() {
+			console.log('Me comunico con sonidos');
+		}
+
+		comer() {
+			console.log('Ingiero alimentos');
+		}
+
+		respirar() {
+			console.log('Respiro oxígeno');
+		}
+
+		reproducir() {
+			console.log('Me reproduzco sexualmente');
+		}
+	}
+
+	let lucy = new Animal('Lucy', 20, 'Hembra');
+	console.log(lucy);
+	lucy.comunicar();
+	lucy.comer();
+	lucy.respirar();
+	lucy.reproducir();
 })();
 ```
+### Instancia de Objetos
 
 **[⬆ regresar al índice](#Índice)**
 
