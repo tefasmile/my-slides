@@ -11,7 +11,7 @@
 	1. [Funciones flecha](#funciones-flecha)
 	1. [Objetos literales](#objetos-literales)
 	1. [Destructuración](#destructuración)
-	1. [Clases](clases)
+	1. [Clases](#clases)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. Promises
