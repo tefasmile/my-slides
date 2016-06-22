@@ -490,7 +490,7 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 
 ### aka Classes
 
-En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada a Objetos más facilmente (sin prototipos), soportan herencia, superclases, instancias, métodos estáticos y constructores.
+En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada a Objetos más facilmente (sin prototipos), soportan herencia, polimorfismo, superclases, instancias, métodos estáticos, constructores, setters y getters.
 
 ### Definición de clase, constructor e instancia de objetos
 
@@ -499,13 +499,14 @@ En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada
 	'use strict';
 
 	class Animal {
-		//El constructor es un método especial que se ejecuta en el momento de instanciar la clase
+		//el constructor es un método especial que se ejecuta en el momento de instanciar la clase
 		constructor(nombre, edad, genero) {
 			this.nombre = nombre;
 			this.edad = edad;
 			this.genero = genero;
 		}
 
+		//métodos públicos de la clase
 		comunicar() {
 			console.log('Me comunico con sonidos');
 		}
@@ -531,7 +532,72 @@ En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada
 	lucy.reproducir();
 })();
 ```
-### Instancia de Objetos
+
+### Herencia, polimorfismo, métodos estáticos, setters y getters
+
+```JavaScript
+(function() {
+	'use strict';
+
+	//con la palabra extends la clase Humano hereda de Animal
+	class Humano extends Animal {
+		//el constructor es un método especial que se ejecuta en el momento de instanciar la clase
+		constructor(nombre, edad, genero) {
+			//con el método super() se manda a llamar el constructor de la clase padre
+			super(nombre, edad, genero);
+			this.razonar = true;
+			this._nacionalidad = 'Terrestre';
+		}
+
+		//un método estático se pueden ejecutar sin necesidad de instanciar la clase
+		static saludar() {
+			console.log('Hola soy un Humano');
+		}
+
+		//Los setters y getters son métodos especiales que nos permiten establecer y obtener los valores de atributos de nuestra clase
+		set nacionalidad(pais) {
+			this._nacionalidad = pais;
+		}
+
+		get nacionalidad() {
+			return this._nacionalidad;
+		}
+
+		//métodos públicos de la clase redefinidos gracias al polimorfismo
+		comunicar() {
+			console.log('Me comunico hablando');
+		}
+
+		comer() {
+			console.log('Como de todo, soy omnívoro');
+		}
+
+		respirar() {
+			console.log('Respiro oxígeno con ayuda de mis pulmones');
+		}
+
+		reproducir() {
+			console.log('Me reproduzco sexualmente, soy mamífero y vivíparo');
+		}
+
+		pensar() {
+			console.log('Pienso por que tengo intelecto');
+		}
+	}
+
+	Humano.saludar();
+	let jon = new Humano('Jonathan', 32, 'Macho');
+	console.log(jon);
+	jon.comunicar();
+	jon.comer();
+	jon.respirar();
+	jon.reproducir();
+	jon.pensar();
+	jon.nacionalidad = 'México';
+	console.log(jon.nacionalidad);
+	console.log(jon);
+})();
+```
 
 **[⬆ regresar al índice](#Índice)**
 
