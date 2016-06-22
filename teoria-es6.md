@@ -616,11 +616,11 @@ En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada
 	}
 
 	let lucy = new Animal('Lucy', 20, 'Hembra');
-	console.log(lucy);
-	lucy.comunicar();
-	lucy.comer();
-	lucy.respirar();
-	lucy.reproducir();
+	console.log(lucy); //Imprime Animal {nombre: "Lucy", edad: 20, genero: "Hembra"} 
+	lucy.comunicar(); //Imprime Me comunico con sonidos
+	lucy.comer(); //Imprime Ingiero alimentos
+	lucy.respirar(); //Imprime Respiro oxígeno
+	lucy.reproducir(); //Imprime Me reproduzco sexualmente
 })();
 ```
 
@@ -676,17 +676,17 @@ En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada
 		}
 	}
 
-	Humano.saludar();
+	Humano.saludar(); //Imprime Hola soy un Humano
 	let jon = new Humano('Jonathan', 32, 'Macho');
-	console.log(jon);
-	jon.comunicar();
-	jon.comer();
-	jon.respirar();
-	jon.reproducir();
-	jon.pensar();
+	console.log(jon); //Imprime Humano {nombre: "Jonathan", edad: 32, genero: "Macho", razonar: true, _nacionalidad: "Terrestre"}
+	jon.comunicar(); //Imprime Me comunico hablando
+	jon.comer(); //Imprime Como de todo, soy omnívoro
+	jon.respirar(); //Imprime Respiro oxígeno con ayuda de mis pulmones
+	jon.reproducir(); //Imprime Me reproduzco sexualmente, soy mamífero y vivíparo
+	jon.pensar(); //Imprime Pienso por que tengo intelecto
 	jon.nacionalidad = 'México';
-	console.log(jon.nacionalidad);
-	console.log(jon);
+	console.log(jon.nacionalidad); //Imprime México
+	console.log(jon); //Imprime Humano {nombre: "Jonathan", edad: 32, genero: "Macho", razonar: true, _nacionalidad: "México"}
 })();
 ```
 
