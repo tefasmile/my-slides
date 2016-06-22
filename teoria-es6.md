@@ -11,19 +11,16 @@
 	1. [Funciones flecha](#funciones-flecha)
 	1. [Objetos literales](#objetos-literales)
 	1. [Destructuración](#destructuración)
+	1. [Parámetros por defecto](#parámetros-por-defecto)
+	1. [Parámetros rest](#parámetros-rest)
+	1. [Operador de propagación](#operador-de-propagación)
 	1. [Clases](#clases)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [](#)
 	1. Promises
-		1. Herencia
-		1. Métodos estáticos
-		1. Getters y setters
 	1. Strings Methods
 	1. Replacing IIFEs with Blocks
-	1. Destructuring
-	1. Parametros por defecto
 	1. Parametros rest
-	1. Operador de Propagación
 	1. Módulos
 	1. 
 	1. Objeto Math
@@ -416,6 +413,7 @@ Las arrow function tienen la capacidad de capturar el objeto `this` del contexto
 ```
 
 ### Nombres de atributos y métodos calculados (o computados)
+
 ```JavaScript
 (function() {
 	'use strict';
@@ -442,7 +440,7 @@ Las arrow function tienen la capacidad de capturar el objeto `this` del contexto
 
 ## Destructuración
 
-### aka Destructuring
+### aka Destructuring o Descomposición
 
 Nuevas formas de asignar valores a Arrays y Objetos. 
 
@@ -480,6 +478,99 @@ Nuevas formas de asignar valores a Arrays y Objetos.
 	console.log(datos); //Imprime Object {correo: "jonmircha@gmail.com", telefono: 5566778899}
 	console.log(email); //Imprime jonmircha@gmail.com
 	console.log(phone); //Imprime 5566778899
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Parámetros por defecto
+
+### aka Default Parameters
+
+Ahora es completamente posible definir un valor por defecto a los parámetros de nuestras funciones al igual que en otros lenguajes de programación.
+
+```JavaScript
+(function() {
+	'use strict';
+
+	//Antes
+	function pais(nombre) {
+		nombre = nombre || 'Terrestre';
+		console.log(nombre);
+	}
+
+	pais(); //Imprime Terrestre
+	pais('México'); //Imprime México
+
+	//Ahora
+	function pais(nombre = 'Terrestre') {
+		console.log(nombre);
+	}
+
+	pais(); //Imprime Terrestre
+	pais('México'); //Imprime México
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Parámetros rest
+
+### aka Rest Parameters
+
+Los parámetros rest son una forma de utilizar parámetros virtualmente infinitos, se definen agregando **`...`** adelante del nombre del parámetro rest, éste tiene que ser siempre el último parámetro de la función.
+
+```JavaScript
+(function() {
+	'use strict';
+
+	function sumar(a, b, ...c) {
+		
+		let resultado = a + b;
+
+		c.forEach(n => {
+			resultado += n;
+		});
+
+		return console.log(resultado);
+	}
+
+	sumar(1,2); //Imprime 3
+	sumar(1,2,3); //Imprime 6
+	sumar(1,2,3,4); //Imprime 10
+	sumar(1,2,3,4,5); //Imprime 15
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Operador de propagación
+
+### aka Spread Operator
+
+Permite que una expresión sea expandida en situaciones donde se esperan múltiples argumentos o elementos.
+
+```JavaScript
+(function() {
+	'use strict';
+
+	let arr1 = [1, 2, 3, 4],
+		arr2 = [5, 6, 7, 8];
+
+	console.log(arr1); //Imprime [1, 2, 3, 4]
+	console.log(...arr1); //Imprime 1 2 3 4
+
+	arr1.push(...arr2);
+	console.log(arr1); //Imprime [1, 2, 3, 4, 5, 6, 7, 8]
+
+	let superiores = ['hombros', 'brazos', 'tronco'],
+		inferiores = ['pelvis', 'piernas', 'rodillas'],
+		cuerpo = ['cabeza', ...superiores, ...inferiores, 'pies'];
+
+	console.log(cuerpo); //Imprime ["cabeza", "hombros", "brazos", "tronco", "pelvis", "piernas", "rodillas", "pies"]
 })();
 ```
 
