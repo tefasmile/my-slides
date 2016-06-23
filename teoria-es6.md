@@ -16,6 +16,7 @@
 	1. [Operador de propagación](#operador-de-propagación)
 	1. [Clases](#clases)
 	1. [Números octales y binarios](#números-octales-y-binarios)
+	1. [Métodos clase Math](#métodos clase Math)
 	1. [](#)
 	1. Promises
 	1. Strings Methods
@@ -23,7 +24,6 @@
 	1. Parametros rest
 	1. Módulos
 	1. 
-	1. Objeto Math
 	1. Métodos de Arrays
 	1. Métodos de Object
 	1. Símbolos
@@ -723,5 +723,30 @@ Explicacion
 	console.log(0b100); //Imprime 4
 })();
 ```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Métodos clase Math
+
+Nuevos métodos de la Clase Matemáticas, apto sólo para ñoños XP
+
+* [**`.acosh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh)
+* [**`.asinh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh)
+* [**`.atanh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh)
+* [**`.cbrt()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.clz32()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.cosh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.exp1m()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.fround()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.hypot()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.imul()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.log10()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.log1p()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.log2()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.sign()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.sinh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.tanh()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
+* [**`.trunc()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/)
 
 **[⬆ regresar al índice](#Índice)**
