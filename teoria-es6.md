@@ -813,12 +813,12 @@ Nuevos métodos para Cadenas de Texto
 (function() {
 	'use strict';
 	
-	let nombre = 'Jonthan';
+	let nombre = 'Jonathan';
 
 	console.log( nombre.startsWith('jo') ); //Imprime false
 	console.log( nombre.endsWith('an')) ; //Imprime true
 	console.log( nombre.includes('th')) ; //Imprime true
-	nombre.repeat(3); //Imprime JonthanJonthanJonthan
+	nombre.repeat(3); //Imprime JonathanJonathanJonathan
 })();
 ```
 
