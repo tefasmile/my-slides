@@ -15,10 +15,10 @@
 	1. [Parámetros rest](#parámetros-rest)
 	1. [Operador de propagación](#operador-de-propagación)
 	1. [Clases](#clases)
+	1. [Promesas](#promesas)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [Métodos clase Math](#métodos-clase-math)
 	1. [](#)
-	1. Promises
 	1. Strings Methods
 	1. Replacing IIFEs with Blocks
 	1. Parametros rest
