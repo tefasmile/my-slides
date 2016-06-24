@@ -16,10 +16,10 @@
 	1. [Operador de propagación](#operador-de-propagación)
 	1. [Clases](#clases)
 	1. [Promesas](#promesas)
+	1. [Métodos clase String](#métodos-clase-string)
 	1. [Números octales y binarios](#números-octales-y-binarios)
 	1. [Métodos clase Math](#métodos-clase-math)
 	1. [](#)
-	1. Strings Methods
 	1. Replacing IIFEs with Blocks
 	1. Parametros rest
 	1. Módulos
@@ -790,6 +790,35 @@ Explicacion
 	'use strict';
 
 	
+})();
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Métodos clase String
+
+Nuevos métodos para Cadenas de Texto
+
+* [**`.fromCodePoint()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint)
+* [**`.codePointAt()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt)
+* [**`.startsWith()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+* [**`.endsWith()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
+* [**`.includes()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+* [**`.repeat()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+* [**`.normalize()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize)
+* [**`.raw()`**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw)
+
+```JavaScript
+(function() {
+	'use strict';
+	
+	let nombre = 'Jonthan';
+
+	console.log( nombre.startsWith('jo') ); //Imprime false
+	console.log( nombre.endsWith('an')) ; //Imprime true
+	console.log( nombre.includes('th')) ; //Imprime true
+	nombre.repeat(3); //Imprime JonthanJonthanJonthan
 })();
 ```
 
