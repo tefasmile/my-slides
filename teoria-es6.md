@@ -743,7 +743,9 @@ const fs = require('fs'),
 
 let promise = new Promise((resolve, reject) => {
 	fs.access(file, fs.F_OK, (err) => {
-		return (err) ? reject( new Error('El archivo no existe') ) : resolve(true);
+		return (err) 
+			? reject( new Error('El archivo no existe') ) 
+			: resolve(true);
 	});
 });
 
@@ -753,7 +755,9 @@ promise
 		
 		return new Promise((resolve, reject) => {
 			fs.readFile(file, (err, data) => {
-				return (err) ? reject( new Error('El archivo no se pudo leer') ) : resolve(data);
+				return (err) 
+				? reject( new Error('El archivo no se pudo leer') ) 
+				: resolve(data);
 			});
 		});
 	})
@@ -762,7 +766,9 @@ promise
 
 		return new Promise((resolve, reject) => {
 			fs.writeFile(newFile, dataPromise, (err) => {
-				return (err) ? reject( new Error('El archivo no se pudo copiar') ) : resolve('El archivo se ha copiado con éxito');
+				return (err)
+					? reject( new Error('El archivo no se pudo copiar') ) 
+					: resolve('El archivo se ha copiado con éxito');
 			});
 		});
 	})
