@@ -693,6 +693,86 @@ En ES6 se incorporan al lenguaje clases para poder hacer Programación Orientada
 **[⬆ regresar al índice](#Índice)**
 
 
+## Promesas
+
+### aka Promises
+
+Es una manera alternativa a las `callbacks` para modelar asincronía
+
+* Construcción explícita del flujo de ejecución
+* Separación en bloques consecutivos
+* Manejo de errores más controlado
+* Combinación de diferentes flujos asíncronos
+* [Más info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+### Callbacks VS Promesas
+![Callbacks VS Promesas](http://bextlan.com/img/para-cursos/callbacks-vs-promise.png)
+
+### Promesas en el navegador
+
+```JavaScript
+(function() {
+	'use strict';
+
+	function adivinarNumero() {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				let n = Math.floor(Math.random() * 10);
+				
+				return (n >= 1 && n <= 5)
+					? resolve(`Adivinaste el número: ${n}`)
+					: reject(new Error(`No adivinaste el número: ${n}`));
+			}, 1000);
+		});
+	}
+
+	adivinarNumero()
+		.then( num => console.log(num) )
+		.catch(error => console.log(error) );
+})();
+```
+
+### Promesas en el servidor
+
+```JavaScript
+'use strict';
+
+const fs = require('fs'),
+	file = './nombres.txt',
+	newFile = './nombres-promises-es6.txt';
+
+let promise = new Promise((resolve, reject) => {
+	fs.access(file, fs.F_OK, (err) => {
+		return (err) ? reject( new Error('El archivo no existe') ) : resolve(true);
+	});
+});
+
+promise
+	.then((dataPromise) => {
+		console.log('El archivo existe');
+		
+		return new Promise((resolve, reject) => {
+			fs.readFile(file, (err, data) => {
+				return (err) ? reject( new Error('El archivo no se pudo leer') ) : resolve(data);
+			});
+		});
+	})
+	.then((dataPromise) => {
+		console.log('El archivo se ha leído exitosamente');
+
+		return new Promise((resolve, reject) => {
+			fs.writeFile(newFile, dataPromise, (err) => {
+				return (err) ? reject( new Error('El archivo no se pudo copiar') ) : resolve('El archivo se ha copiado con éxito');
+			});
+		});
+	})
+	.then((dataPromise) => { console.log(dataPromise); })
+	.catch((err) => { console.log(err.message); });
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
 ## Tema
 
 ### aka Tema
