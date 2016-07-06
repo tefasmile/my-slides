@@ -36,8 +36,8 @@ Git & GitHub, MarkDown
 Inicializar un proyecto npm
 
 ```
-$ > npm init //Con asistente
-$ > npm init -y // Sin asistente
+$ > **npm init** //Con asistente
+$ > **npm init -y** // Sin asistente
 ```
 
 
