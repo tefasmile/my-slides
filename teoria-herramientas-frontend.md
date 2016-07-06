@@ -195,7 +195,7 @@ $ > npm view [package] versions
 ![Git](http://bextlan.com/img/para-cursos/logo-git.png)
 
 ### Software de Control de versiones
-Git es un software de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
+[Git](https://git-scm.com/) es un software de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
 
 #### Control de versiones distribuido
 Se denomina **"distribuido"** porque cada miembro del equipo dispone de una copia completa del código.
@@ -205,6 +205,38 @@ Se denomina **"distribuido"** porque cada miembro del equipo dispone de una copi
 Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcionalidades de forma conjunta y separada del servidor central.
 ![Git es Descentralizado](http://bextlan.com/img/para-cursos/git-centr-decentr.png)
 
+### Ventajas de usar Git
+* Código colaborativo, versionado y distribuido
+* Recuperación de archivos
+* Estándar actual
+* Mayor control
+* Shorcuts y Plugins
+* Mejora tu productividad
 
+### [Instalación](https://git-scm.com/downloads)
+
+### Zonas de Git
+
+1. Directorio de trabajo
+1. Área de preparación
+1. Directorio Git
+
+### Flujo de trabajo básico en Git
+
+1. Modificas una serie de archivos en tu directorio de trabajo.
+1. Preparas los archivos, añadiéndolos a tu área de preparación.
+1. Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
+
+### Configurando Git por primera vez
+
+```git
+git config --global user.name "Jonathan MirCha"
+git config --global user.email jonmircha@gmail.com
+git config --global core.editor nano
+git config --list
+```
+
+### Más Info
+* [Source Tree Interfaz Gráfica](https://www.sourcetreeapp.com/)
 
 **[⬆ regresar al índice](#Índice)**
