@@ -8,10 +8,11 @@
 1. [NPM](#npm)
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
+1. [GitHub](#github)
+1. [MarkDown](#markdown)
 Sistemas de Automatización
 Web Performance Optimization
 Preprocesadores
-Git & GitHub, MarkDown
 
 ## Node.js
 ![Node.js](http://bextlan.com/img/para-cursos/nodejs-new-pantone-black.png)
@@ -194,7 +195,7 @@ $ > npm view [package] versions
 ## Git
 ![Git](http://bextlan.com/img/para-cursos/logo-git.png)
 
-### Software de Control de versiones
+#### Software de Control de versiones
 [Git](https://git-scm.com/) es un software de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
 
 #### Control de versiones distribuido
@@ -206,22 +207,29 @@ Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcion
 ![Git es Descentralizado](http://bextlan.com/img/para-cursos/git-centr-decentr.png)
 
 ### Ventajas de usar Git
+![Estadísticas Git](http://bextlan.com/img/para-cursos/git-estadisticas.png)
+* Estándar actual
 * Código colaborativo, versionado y distribuido
 * Recuperación de archivos
-* Estándar actual
 * Mayor control
 * Shorcuts y Plugins
 * Mejora tu productividad
 
-### [Instalación](https://git-scm.com/downloads)
+### Instalación
+
+* [Git](https://git-scm.com/downloads)
+* [Source Tree Interfaz Gráfica](https://www.sourcetreeapp.com/)
 
 ### Configurando Git por primera vez
 
 ```git
-git config --global user.name "Jonathan MirCha"
-git config --global user.email jonmircha@gmail.com
-git config --global core.editor nano
-git config --list
+$ > git --version
+$ > git config --global user.name "Jonathan MirCha"
+$ > git config --global user.email jonmircha@gmail.com
+$ > git config --global user.ui true
+$ > git config --global core.editor nano
+$ > git config --list
+$ > git help [comando a buscar]
 ```
 
 ### Zonas y Flujo de trabajo básico en Git
@@ -238,7 +246,46 @@ Preparas los archivos, añadiéndolos a tu área de preparación.
 Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
 ![Repositorio](http://bextlan.com/img/para-cursos/repositorio.png)
 
+### Inicializar Git en un directorio local
+* **`git init`** crea un directorio oculto **`.git`** donde se almacena toda la información utilizada por git
+* El comando UNIX **`touch`** nos crea un nuevo archivo
+* En el archivo **`.gitignore`** incluimos todo lo que NO queramos incluir en nuestro repositorio. Lo podemos crear con [gitignore.io](https://www.gitignore.io/)
+* **`git status`** nos muestra el listado de archivos nuevos (untracked), borrados o editados
+* **`git log`** nos permite conocer todo el historial de un proyecto
+
+```git
+$ > mkdir carpeta
+$ > cd carpeta
+$ > touch README.md
+$ > touch .gitignore
+$ > git init
+$ > git status
+$ > git log
+```
+
+### Plataformas web que trabajan con Git
+![Git no es GitHub](http://bextlan.com/img/para-cursos/git-github.png)
+* [GitHub](https://github.com/)
+* [GitLab](https://gitlab.com/)
+* [BitBucket](https://bitbucket.org/)
+* etc.
+
 ### Más Info
-* [Source Tree Interfaz Gráfica](https://www.sourcetreeapp.com/)
+* [Git - La guía sencilla](http://rogerdudler.github.io/git-guide/index.es.html)
+* [Libro Pro Git](https://git-scm.com/book/es/v2)
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## GitHub
+![GitHub](http://bextlan.com/img/para-cursos/octocat.png)
+
+#### [Crea tu cuenta](https://github.com/)
+
+### Flujo de Trabajo con Git & GitHub
+
+### Más Info
+* [Guías Oficiales de GitHub](https://guides.github.com/)
+* [Try GitHub](https://try.github.io)
 
 **[⬆ regresar al índice](#Índice)**
