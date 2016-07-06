@@ -215,18 +215,6 @@ Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcion
 
 ### [Instalación](https://git-scm.com/downloads)
 
-### Zonas de Git
-
-1. Directorio de trabajo ![Working Area](http://bextlan.com/img/para-cursos/workingarea.png)
-1. Área de preparación ![Staging Area](http://bextlan.com/img/para-cursos/stagingarea.png)
-1. Directorio Git ![Repositorio](http://bextlan.com/img/para-cursos/repositorio.png)
-
-### Flujo de trabajo básico en Git
-
-1. Modificas una serie de archivos en tu directorio de trabajo.
-1. Preparas los archivos, añadiéndolos a tu área de preparación.
-1. Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
-
 ### Configurando Git por primera vez
 
 ```git
@@ -235,6 +223,20 @@ git config --global user.email jonmircha@gmail.com
 git config --global core.editor nano
 git config --list
 ```
+
+### Zonas y Flujo de trabajo básico en Git
+
+#### 1. Directorio de trabajo
+Modificas una serie de archivos en tu directorio de trabajo.
+![Working Area](http://bextlan.com/img/para-cursos/workingarea.png)
+
+#### 2. Área de preparación
+Preparas los archivos, añadiéndolos a tu área de preparación.
+![Staging Area](http://bextlan.com/img/para-cursos/stagingarea.png)
+
+#### 3. Repositorio Git
+Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
+![Repositorio](http://bextlan.com/img/para-cursos/repositorio.png)
 
 ### Más Info
 * [Source Tree Interfaz Gráfica](https://www.sourcetreeapp.com/)
