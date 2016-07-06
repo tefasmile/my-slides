@@ -7,6 +7,7 @@
 1. [Node.js](#nodejs)
 1. [NPM](#npm)
 1. [Paquetes NPM](#paquetes-npm)
+1. [Git](#git)
 Sistemas de Automatización
 Web Performance Optimization
 Preprocesadores
@@ -186,5 +187,24 @@ $ > npm view [package] versions
 ```
 
 ### [Documentación de NPM](https://docs.npmjs.com/)
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Git
+![Git](http://bextlan.com/img/para-cursos/logo-git.png)
+
+### Software de Control de versiones
+Git es un software de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
+
+#### Control de versiones distribuido
+Se denomina **"distribuido"** porque cada miembro del equipo dispone de una copia completa del código.
+![Git es Distribuido](http://bextlan.com/img/para-cursos/git-distributed.png)
+
+#### Control de versiones descentralizado
+Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcionalidades de forma conjunta y separada del servidor central.
+![Git es Descentralizado](http://bextlan.com/img/para-cursos/git-centr-decentr.png)
+
+
 
 **[⬆ regresar al índice](#Índice)**
