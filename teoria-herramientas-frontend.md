@@ -4,7 +4,7 @@
 
 ## Índice
 1. [Introducción](link a las slides)
-1. [Node.js](#node.js)
+1. [Node.js](#nodejs)
 1. [NPM](#npm)
 Sistemas de Automatización
 Web Performance Optimization
@@ -29,10 +29,18 @@ Git & GitHub, MarkDown
 ![NPM](http://bextlan.com/img/para-cursos/npm-logo.png)
 
 ### Node Package Manager
-Es el gestor de paquetes de Node.js... y de todo JavaScript
+[npmjs.com](https://www.npmjs.com/) es el gestor de paquetes de Node.js... y de todo JavaScript
+
+### npm CLI
+
+Inicializar un proyecto npm
+
+```Terminal
+$ > npm init //Con asistente
+$ > npm init -y // Sin asistente
+```
 
 
-* [npmjs.com](https://www.npmjs.com/)
 * []()
 * []()
 * []()
