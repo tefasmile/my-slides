@@ -217,9 +217,9 @@ Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcion
 
 ### Zonas de Git
 
-1. Directorio de trabajo
-1. Área de preparación
-1. Directorio Git
+1. Directorio de trabajo ![Working Area](http://bextlan.com/img/para-cursos/workingarea.png)
+1. Área de preparación ![Staging Area](http://bextlan.com/img/para-cursos/stagingarea.png)
+1. Directorio Git ![Repositorio](http://bextlan.com/img/para-cursos/repositorio.png)
 
 ### Flujo de trabajo básico en Git
 
