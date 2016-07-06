@@ -1,0 +1,20 @@
+{
+  "name": "my-slides",
+  "version": "1.0.0",
+  "description": "Hola en este repositorio encontrarás los enlaces a todas las slides que hago para mis cursos y charlas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonmircha/my-slides.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonmircha/my-slides/issues"
+  },
+  "homepage": "https://github.com/jonmircha/my-slides#readme"
+}

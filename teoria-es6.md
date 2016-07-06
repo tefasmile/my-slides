@@ -36,6 +36,9 @@
 	1. Funciones async
 	1. Map, Weakmap, Set, Weakset
 1. Babel 
+1. Más Info
+	https://kangax.github.io/compat-table/es6/
+	http://es6-features.org/
 
 
 # ECMAScript
