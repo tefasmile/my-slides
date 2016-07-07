@@ -268,7 +268,6 @@ Confirmas los cambios, lo que toma los archivos tal y como están en el área de
 * El comando UNIX **`touch`** nos crea un nuevo archivo
 * En el archivo **`.gitignore`** incluimos todo lo que NO queramos incluir en nuestro repositorio. Lo podemos crear con [gitignore.io](https://www.gitignore.io/)
 * **`git status`** nos muestra el listado de archivos nuevos (untracked), borrados o editados
-* **`git log`** nos permite conocer todo el historial de un proyecto
 
 ```git
 $ > mkdir carpeta
@@ -277,7 +276,6 @@ $ > touch README.md
 $ > touch .gitignore
 $ > git init
 $ > git status
-$ > git log
 ```
 
 ### Plataformas web que trabajan con Git
@@ -378,6 +376,16 @@ $ > git pull //para las subsecuentes actualizaciones
 ```
 
 ![Git Pull](http://bextlan.com/img/para-cursos/git-level-pull.png)
+
+#### Revisando el Historial
+
+**`git log`** nos permite conocer todo el historial de un proyecto, con la información de la fecha, el autor y id de cada cambio
+
+```git
+$ > git log
+$ > git log --oneline
+$ > git log > commits.txt
+```
 
 ### Más Info
 
