@@ -320,7 +320,7 @@ El primer nivel es nuestra carpeta de trabajo. Podemos añadir, quitar, editar a
 
 ![Working Dir](http://bextlan.com/img/para-cursos/git-level-wd.png)
 
-Una vez creados, modificados, añadidos o borrados los archivos al working dir los pasamos al staging mediante:
+Una vez creados, modificados, añadidos o borrados los archivos al **working dir** los pasamos al **staging** mediante:
 
 ```git
 $ > git add [nombre de archivo(s) o directorio(s)]
@@ -343,7 +343,7 @@ $ > git commit -m 'mensaje descriptivo'
 
 #### HEAD
 
-Nuestro conjunto de cambios está listo para enviar al repositorio remoto. El HEAD es nuestra "bandeja de salida". Podemos seguir trabajando y crear más "commits".
+Nuestro conjunto de cambios está listo para enviar al repositorio remoto. El **HEAD** es nuestra "bandeja de salida". Podemos seguir trabajando y crear más "commits".
 
 ![HEAD](http://bextlan.com/img/para-cursos/git-level-head.png)
 
@@ -359,12 +359,12 @@ $ > git remote add origin https://github.com/usuario/repositorio.git
 
 Una vez indicando a Git que tenemos un repositorio remoto podemos enviar el conjunto de cambios contenidos en nuestro **HEAD**. Por defecto Git denomina **origin** a nuestro repositorio remoto y crea una rama llamada **master** mediante:
 
-![Remote Origin](http://bextlan.com/img/para-cursos/git-level-origin.png)
-
 ```git
 $ > git push -u origin master //la primera vez que vinculamos el repositorio remoto con el local
 $ > git push //para las subsecuentes actualizaciones
 ```
+
+![Remote Origin](http://bextlan.com/img/para-cursos/git-level-origin.png)
 
 #### Sincronizando versiones
 
@@ -372,11 +372,11 @@ Antes de enviar nuestros cambios tenemos que bajarnos la última versión del re
 
 Cuando obtenemos archivos del repositorio remoto a nuestra copia local Git obtiene todos los archivos nuevos que se hayan añadido y elimina los que se hayan quitado.
 
-![Git Pull](http://bextlan.com/img/para-cursos/git-level-pull.png)
-
 ```git
 $ > git pull origin master
 ```
+
+![Git Pull](http://bextlan.com/img/para-cursos/git-level-pull.png)
 
 ### Más Info
 
