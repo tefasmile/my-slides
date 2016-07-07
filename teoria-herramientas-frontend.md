@@ -297,9 +297,9 @@ $ > git status
 
 ## GitHub
 
-![GitHub](http://bextlan.com/img/para-cursos/octocat.png)
-
 #### [Crea tu cuenta](https://github.com/)
+
+![GitHub](http://bextlan.com/img/para-cursos/octocat.png)
 
 ### Flujo de trabajo básico con Git & GitHub
 
