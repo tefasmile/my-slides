@@ -3,18 +3,20 @@
 ![Herramientas Frontend](http://bextlan.com/img/para-cursos/es6-logo.jpg)
 
 ## Índice
+
 1. [Introducción](link a las slides)
 1. [Node.js](#nodejs)
 1. [NPM](#npm)
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
 1. [GitHub](#github)
-1. [MarkDown](#markdown)
-Sistemas de Automatización
-Web Performance Optimization
-Preprocesadores
+1. [Preprocesadores]()
+1. [Sistemas de Automatización]()
+1. [Web Performance Optimization]()
+Node Version
 
 ## Node.js
+
 ![Node.js](http://bextlan.com/img/para-cursos/nodejs-new-pantone-black.png)
 
 * [nodejs.org](https://nodejs.org/)
@@ -29,9 +31,11 @@ Preprocesadores
 
 
 ## NPM
+
 ![NPM](http://bextlan.com/img/para-cursos/npm-logo.png)
 
 ### Node Package Manager
+
 [npmjs.com](https://www.npmjs.com/) es el gestor de paquetes de Node.js... y de todo JavaScript
 
 ### Iniciar un proyecto npm
@@ -173,6 +177,7 @@ $ > npm un [package] // shortcut
 ```
 
 ### Publicación de paquetes
+
 Un paquete no puede volver a re-publicarse con la misma versión. Si despublicas un paquete puedes romper Internet :grimacing:
 
 ```
@@ -180,6 +185,7 @@ $ > npm publish
 ```
 
 ### Mostrar información de paquetes
+
 Lee metadatos del archivo **`package.json`** del paquete en su repositorio oficial
 
 ```
@@ -196,17 +202,21 @@ $ > npm view [package] versions
 ![Git](http://bextlan.com/img/para-cursos/logo-git.png)
 
 #### Software de Control de versiones
+
 [Git](https://git-scm.com/) es un software de control de versiones distribuido y descentralizado que permite a un equipo de desarrolladores trabajar sobre el mismo código.
 
 #### Control de versiones distribuido
+
 Se denomina **"distribuido"** porque cada miembro del equipo dispone de una copia completa del código.
 ![Git es Distribuido](http://bextlan.com/img/para-cursos/git-distributed.png)
 
 #### Control de versiones descentralizado
+
 Los miembros del equipo pueden enviarse código, recibirlo y desarrollar funcionalidades de forma conjunta y separada del servidor central.
 ![Git es Descentralizado](http://bextlan.com/img/para-cursos/git-centr-decentr.png)
 
 ### Ventajas de usar Git
+
 ![Estadísticas Git](http://bextlan.com/img/para-cursos/git-estadisticas.png)
 * Estándar actual
 * Código colaborativo, versionado y distribuido
@@ -235,18 +245,25 @@ $ > git help [comando a buscar]
 ### Zonas y Flujo de trabajo básico en Git
 
 #### 1. Directorio de trabajo
+
 Modificas una serie de archivos en tu directorio de trabajo.
+
 ![Working Area](http://bextlan.com/img/para-cursos/workingarea.png)
 
 #### 2. Área de preparación
+
 Preparas los archivos, añadiéndolos a tu área de preparación.
+
 ![Staging Area](http://bextlan.com/img/para-cursos/stagingarea.png)
 
 #### 3. Repositorio Git
+
 Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.
+
 ![Repositorio](http://bextlan.com/img/para-cursos/repositorio.png)
 
 ### Inicializar Git en un directorio local
+
 * **`git init`** crea un directorio oculto **`.git`** donde se almacena toda la información utilizada por git
 * El comando UNIX **`touch`** nos crea un nuevo archivo
 * En el archivo **`.gitignore`** incluimos todo lo que NO queramos incluir en nuestro repositorio. Lo podemos crear con [gitignore.io](https://www.gitignore.io/)
@@ -264,13 +281,16 @@ $ > git log
 ```
 
 ### Plataformas web que trabajan con Git
+
 ![Git no es GitHub](http://bextlan.com/img/para-cursos/git-github.png)
+
 * [GitHub](https://github.com/)
 * [GitLab](https://gitlab.com/)
 * [BitBucket](https://bitbucket.org/)
 * etc.
 
 ### Más Info
+
 * [Git - La guía sencilla](http://rogerdudler.github.io/git-guide/index.es.html)
 * [Libro Pro Git](https://git-scm.com/book/es/v2)
 
@@ -278,13 +298,88 @@ $ > git log
 
 
 ## GitHub
+
 ![GitHub](http://bextlan.com/img/para-cursos/octocat.png)
 
 #### [Crea tu cuenta](https://github.com/)
 
-### Flujo de Trabajo con Git & GitHub
+### Flujo de trabajo básico con Git & GitHub
+
+El flujo se distribuye en tres estados locales y uno remoto
+
+* Estados Locales:
+	* **Working Dir:** El directorio donde almacenamos los archivos
+	* **Staging:** El estado en el que avisamos a Git de que hemos realizado cambios
+	* **HEAD:** El puntero hacia el último bloque de código (commit)
+* Estado Remoto:
+	* **Remote Origin:** El directorio remoto donde almacenamos los archivos en GitHub
+
+#### Working Dir
+
+El primer nivel es nuestra carpeta de trabajo. Podemos añadir, quitar, editar archivos y Git sólo se encargará de controlar los archivos que han sido modificados.
+
+![Working Dir](http://bextlan.com/img/para-cursos/git-level-wd.png)
+
+Una vez creados, modificados, añadidos o borrados los archivos al working dir los pasamos al staging mediante:
+
+```git
+$ > git add [nombre de archivo(s) o directorio(s)]
+$ > git add --all //todos los archivos
+$ > git add -A //shortcut todos los archivos
+$ > git add . //otro shortcut todos los archivos
+```
+
+#### Staging
+
+En el segundo nivel nuestros archivos están preparados para ser empaquetados. Podemos seguir trabajando y repetir el proceso tantas veces como necesitemos.
+
+![Staging](http://bextlan.com/img/para-cursos/git-level-staging.png)
+
+Cuando hemos completado un conjunto de cambios, los "empaquetamos" mediante la instrucción **`commit`** y los colocamos en el **HEAD** mediante:
+
+```git
+$ > git commit -m 'mensaje descriptivo'
+```
+
+#### HEAD
+
+Nuestro conjunto de cambios está listo para enviar al repositorio remoto. El HEAD es nuestra "bandeja de salida". Podemos seguir trabajando y crear más "commits".
+
+![HEAD](http://bextlan.com/img/para-cursos/git-level-head.png)
+
+#### Remote Origin
+
+Ahora vincularemos nuestro repositorio local con uno remoto en Github.
+
+Una vez creado el repositorio remoto en GitHub lo "vinculamos" a nuestro repositorio local mediante:
+
+```git
+$ > git remote add origin https://github.com/usuario/repositorio.git
+```
+
+Una vez indicando a Git que tenemos un repositorio remoto podemos enviar el conjunto de cambios contenidos en nuestro **HEAD**. Por defecto Git denomina **origin** a nuestro repositorio remoto y crea una rama llamada **master** mediante:
+
+![Remote Origin](http://bextlan.com/img/para-cursos/git-level-origin.png)
+
+```git
+$ > git push -u origin master //la primera vez que vinculamos el repositorio remoto con el local
+$ > git push //para las subsecuentes actualizaciones
+```
+
+#### Sincronizando versiones
+
+Antes de enviar nuestros cambios tenemos que bajarnos la última versión del repositorio remoto, obtenemos los últimos cambios de **origin** y los combinamos con la rama **master**
+
+Cuando obtenemos archivos del repositorio remoto a nuestra copia local Git obtiene todos los archivos nuevos que se hayan añadido y elimina los que se hayan quitado.
+
+![Git Pull](http://bextlan.com/img/para-cursos/git-level-pull.png)
+
+```git
+$ > git pull origin master
+```
 
 ### Más Info
+
 * [Guías Oficiales de GitHub](https://guides.github.com/)
 * [Try GitHub](https://try.github.io)
 
