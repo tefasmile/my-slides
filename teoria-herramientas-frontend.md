@@ -373,7 +373,8 @@ Antes de enviar nuestros cambios tenemos que bajarnos la última versión del re
 Cuando obtenemos archivos del repositorio remoto a nuestra copia local Git obtiene todos los archivos nuevos que se hayan añadido y elimina los que se hayan quitado.
 
 ```git
-$ > git pull origin master
+$ > git pull origin master //la primera vez que descargamos el repositorio remoto al local
+$ > git pull //para las subsecuentes actualizaciones
 ```
 
 ![Git Pull](http://bextlan.com/img/para-cursos/git-level-pull.png)
