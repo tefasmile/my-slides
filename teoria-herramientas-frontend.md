@@ -10,8 +10,7 @@
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
 1. [GitHub](#github)
-1. [Más de Git](#más-de-git)
-1. [GitHub Pages](#github-pages)
+1. [Más de Git & GitHub](#más-de-git-github)
 1. [Preprocesadores]()
 1. [Sistemas de Automatización]()
 1. [Web Performance Optimization]()
@@ -397,9 +396,9 @@ $ > git log > commits.txt
 **[⬆ regresar al índice](#Índice)**
 
 
-## Más de Git
+## Más de Git & GitHub
 
-#### Ramas
+### Ramas
 
 Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la versión principal.
 
@@ -410,7 +409,7 @@ $ > git branch -d [nombre-rama] //eliminar rama
 $ > git branch -D [nombre-rama] //eliminar rama (forzado)
 ```
 
-#### Moverse en el Historial
+### Moverse en el Historial
 
 Podemos desplazarnos en el historial del proyecto hacia atrás o adelante en cambios o ramas , sin afectar el proyecto como tal.
 
@@ -419,7 +418,7 @@ $ > git checkout [nombre-rama] //cambiar a una rama
 $ > git checkout [id-commit] //cambiar a un cambio
 ```
 
-#### Resetear
+### Resetear
 
 Podemos eliminar el historial de cambios del proyecto hacia adelante con respecto de un punto de referencia.
 
@@ -429,7 +428,7 @@ $ > git reset --mixed //borra el HEAD y el Staging
 $ > git reset --hard //borra el HEAD, Staging y WorkingDir
 ```
 
-#### Fusiones
+### Fusiones
 
 Une dos ramas. Para hacer una fusión necesitamos:
 
@@ -446,7 +445,7 @@ $ > git checkout [rama-principal] //Nos cambiamos a la rama principal que quedar
 $ > git merge [rama-secundaria] //Ejecutamos el comando merge con la rama secundaria a fusionar
 ```
 
-#### Etiquetas
+### Etiquetas
 
 Con esta opción git nos permite versionar nuestro código, librería o proyecto
 
@@ -461,18 +460,15 @@ $ > git commit -m 'v1.0.0'
 $ > git push origin [numero-versión] //compartir etiqueta en GitHub
 ```
 
-#### Clonar repositorios
+### Clonar repositorios
 
 ```git
 $ > git clone [url-repositorio]
 ```
 
-**[⬆ regresar al índice](#Índice)**
+### GitHub Pages
 
-
-## GitHub Pages
-
-**`[gh-pages](https://pages.github.com/)`** es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de Github.
+[**`gh-pages`**](https://pages.github.com/) es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de Github.
 
 ```git
 $ > git branch gh-pages
