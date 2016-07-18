@@ -10,7 +10,7 @@
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
 1. [GitHub](#github)
-1. [Más de Git](#mas-de-git)
+1. [Más de Git](#más-de-git)
 1. [GitHub Pages](#github-pages)
 1. [Preprocesadores]()
 1. [Sistemas de Automatización]()
