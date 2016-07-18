@@ -10,7 +10,7 @@
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
 1. [GitHub](#github)
-1. [Más de Git & GitHub](#más-de-git-github)
+1. [Más de Git & GitHub](#más-de-git--github)
 1. [Preprocesadores]()
 1. [Sistemas de Automatización]()
 1. [Web Performance Optimization]()
@@ -157,6 +157,14 @@ Se pueden instalar múltiples paquetes, separando sus nombres con un espacio en 
 
 ```
 $ > npm install [package1] [package2] [package3] --flag
+```
+
+### Instalación de proyecto con `package.json`
+
+Cuando un proyecto tiene el archivo **`package.json`** se pueden instalar todas las dependencias de proyecto y desarrollo que tenga registradas en el mismo.
+
+```
+$ > npm install
 ```
 
 ### Actualización de paquetes
