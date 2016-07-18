@@ -10,6 +10,8 @@
 1. [Paquetes NPM](#paquetes-npm)
 1. [Git](#git)
 1. [GitHub](#github)
+1. [Más de Git](#mas-de-git)
+1. [GitHub Pages](#github-pages)
 1. [Preprocesadores]()
 1. [Sistemas de Automatización]()
 1. [Web Performance Optimization]()
@@ -42,7 +44,7 @@ Node Version
 
 ```
 $ > npm init //Con asistente
-$ > npm init -y // Sin asistente
+$ > npm init -y //Sin asistente
 ```
 
 ### package.json
@@ -120,7 +122,7 @@ Se instalan en la carpeta donde se encuentre la terminal de comandos, **NO** se 
 ```
 $ > npm install [nombre del package]
 $ > npm install [nombre del package]@3.4.12 // Versión específica
-$ > npm i [nombre del package] // shortcut
+$ > npm i [nombre del package] //shortcut
 ```
 
 ### Instalación como Dependencia del proyecto
@@ -129,7 +131,7 @@ Se instalan en la carpeta donde se encuentre la terminal de comandos, **SI** se 
 
 ```
 $ > npm install [nombre del package] --save
-$ > npm install [nombre del package] -S // shortcut
+$ > npm install [nombre del package] -S //shortcut
 ```
 
 ### Instalación como Dependencia de Desarrollo del proyecto
@@ -138,7 +140,7 @@ Se instalan en la carpeta donde se encuentre la terminal de comandos, **SI** se 
 
 ```
 $ > npm install [nombre del package] --save-dev
-$ > npm install [nombre del package] -D // shortcut
+$ > npm install [nombre del package] -D //shortcut
 ```
 
 ### Instalación Global
@@ -147,7 +149,7 @@ Se instalan localmente en el ordenador independientemente de donde se encuentre 
 
 ```
 $ > npm install [nombre del package] --global
-$ > npm install [nombre del package] -g // shortcut
+$ > npm install [nombre del package] -g //shortcut
 ```
 
 ### Instalación Múltiple de paquetes
@@ -169,11 +171,11 @@ $ > npm update [package]
 Si se utiliza el flag **`--save`** o **`--save-dev`** se elimina el registro del archivo **`package.json`**, si se usa **`--global`** se elimina del ordenador
 
 ```
-$ > npm uninstall [package] // se borra de la carpeta node_modules
+$ > npm uninstall [package] //se borra de la carpeta node_modules
 $ > npm uninstall [package] --save
 $ > npm uninstall [package] --save-dev
 $ > npm uninstall [package] --global
-$ > npm un [package] // shortcut
+$ > npm un [package] //shortcut
 ```
 
 ### Publicación de paquetes
@@ -371,7 +373,7 @@ Antes de enviar nuestros cambios tenemos que bajarnos la última versión del re
 Cuando obtenemos archivos del repositorio remoto a nuestra copia local Git obtiene todos los archivos nuevos que se hayan añadido y elimina los que se hayan quitado.
 
 ```git
-$ > git pull origin master //la primera vez que descargamos el repositorio remoto al local
+$ > git pull -u origin master //la primera vez que descargamos el repositorio remoto al local
 $ > git pull //para las subsecuentes actualizaciones
 ```
 
@@ -391,5 +393,98 @@ $ > git log > commits.txt
 
 * [Guías Oficiales de GitHub](https://guides.github.com/)
 * [Try GitHub](https://try.github.io)
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Más de Git
+
+#### Ramas
+
+Una rama nos permite aislar una nueva funcionalidad en nuestro código que después podremos añadir a la versión principal.
+
+```git
+$ > git branch [nombre-rama] //crear rama
+$ > git branch -b [nombre-rama] //crear rama y situarnos en ella
+$ > git branch -d [nombre-rama] //eliminar rama
+$ > git branch -D [nombre-rama] //eliminar rama (forzado)
+```
+
+#### Moverse en el Historial
+
+Podemos desplazarnos en el historial del proyecto hacia atrás o adelante en cambios o ramas , sin afectar el proyecto como tal.
+
+```git
+$ > git checkout [nombre-rama] //cambiar a una rama
+$ > git checkout [id-commit] //cambiar a un cambio
+```
+
+#### Resetear
+
+Podemos eliminar el historial de cambios del proyecto hacia adelante con respecto de un punto de referencia.
+
+```git
+$ > git reset --soft //borra el HEAD
+$ > git reset --mixed //borra el HEAD y el Staging
+$ > git reset --hard //borra el HEAD, Staging y WorkingDir
+```
+
+#### Fusiones
+
+Une dos ramas. Para hacer una fusión necesitamos:
+
+1. Situarnos en la rama que se quedará con el contenido fusionado.
+1. Fusionar
+
+Cuando se fusionan ramas se pueden dar 2 resultados diferentes:
+
+* **Fast-Forward**: La fusión se hace automática, no hay conflictos por resolver
+* **Manual Merge**: La fusión hay que hacerla manual, para resolver conflictos de duplicación de contenido
+
+```git
+$ > git checkout [rama-principal] //Nos cambiamos a la rama principal que quedará de la fusión
+$ > git merge [rama-secundaria] //Ejecutamos el comando merge con la rama secundaria a fusionar
+```
+
+#### Etiquetas
+
+Con esta opción git nos permite versionar nuestro código, librería o proyecto
+
+```git
+$ > git tag [numero-versión] //crear una etiqueta
+$ > git show [numero-versión] //mostrar información de una etiqueta
+$ > git tag //listar etiquetas
+
+$ > git add .
+$ > git commit -m 'v1.0.0'
+
+$ > git push origin [numero-versión] //compartir etiqueta en GitHub
+```
+
+#### Clonar repositorios
+
+```git
+$ > git clone [url-repositorio]
+```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## GitHub Pages
+
+**`[gh-pages](https://pages.github.com/)`** es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de Github.
+
+```git
+$ > git branch gh-pages
+$ > git checkout gh-pages
+
+$ > git remote add origin https://github.com/usuario/repositorio.git
+$ > git pull origin gh-pages
+
+$ > git add .
+$ > git commit -m 'Subiendo sitio web'
+
+$ > git push origin gh-pages
+```
 
 **[⬆ regresar al índice](#Índice)**
