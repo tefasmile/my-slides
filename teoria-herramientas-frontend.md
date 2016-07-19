@@ -412,9 +412,9 @@ Una rama nos permite aislar una nueva funcionalidad en nuestro código que despu
 
 ```git
 $ > git branch [nombre-rama] //crear rama
-$ > git branch -b [nombre-rama] //crear rama y situarnos en ella
 $ > git branch -d [nombre-rama] //eliminar rama
 $ > git branch -D [nombre-rama] //eliminar rama (forzado)
+$ > git branch //listar ramas
 ```
 
 ### Moverse en el Historial
@@ -479,16 +479,17 @@ $ > git clone [url-repositorio]
 [**`gh-pages`**](https://pages.github.com/) es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de Github.
 
 ```git
+$ > git init
+$ > git add .
+$ > git commit -m 'Creando sitio web en GitHub Pages'
+
 $ > git branch gh-pages
 $ > git checkout gh-pages
 
 $ > git remote add origin https://github.com/usuario/repositorio.git
-$ > git pull origin gh-pages
-
-$ > git add .
-$ > git commit -m 'Subiendo sitio web'
-
 $ > git push origin gh-pages
+
+$ > git pull origin gh-pages
 ```
 
 **[⬆ regresar al índice](#Índice)**
