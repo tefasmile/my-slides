@@ -478,6 +478,9 @@ $ > git clone [url-repositorio]
 
 [**`gh-pages`**](https://pages.github.com/) es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio de Github.
 
+* URL del repositorio: **https://github.com/usuario/repositorio**
+* URL del sitio: **https://usuario.github.io/repositorio**
+
 ```git
 $ > git init
 $ > git add .
