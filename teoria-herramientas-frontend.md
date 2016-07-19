@@ -11,10 +11,11 @@
 1. [Git](#git)
 1. [GitHub](#github)
 1. [Más de Git & GitHub](#más-de-git--github)
-1. [Preprocesadores]()
+1. [Preprocesadores](#preprocesadores)
 1. [Sistemas de Automatización]()
 1. [Web Performance Optimization]()
 Node Version
+	https://frontendlabs.io/3397--node-js-como-trabajar-multiples-versiones-de-node-version-manager
 
 ## Node.js
 
@@ -494,5 +495,47 @@ $ > git push origin gh-pages
 
 $ > git pull origin gh-pages
 ```
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Preprocesadores
+
+Un preprocesador de **Frontend** es una herramienta que nos permite escribir pseudo-código HTML, CSS o JS que luego será convertido a código real (HTML, CSS o JS). Ese pseudo-código se conforma de variables, condiciones, bucles o funciones.
+
+El objetivo de estos preprocesadores es tener un código más limpio y sencillo de mantener y editar. Incluyen características tales como variables, funciones, mixins, anidación y modularidad.
+
+Soportados por plataformas como:
+
+* Codepen
+* JSSLife buscar....
+
+### Preprocesadores HTML
+
+* MarkDown
+	* [¿Qué es?](http://whatismarkdown.com/)
+	* [Guía](http://joedicastro.com/pages/markdown.html)
+	* [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+	* [Tutorial interactivo](http://www.markdowntutorial.com/)
+	* [En vivo](http://dillinger.io/)
+* [Jade](http://jade-lang.com/)
+* [Haml](http://haml.info/)
+* [Handlebars](http://handlebarsjs.com/)
+* [EJS](http://ejs.co/)
+
+### Preprocesadores CSS
+
+* [less](http://lesscss.org/)
+* [Stylus](http://stylus-lang.com/)
+* [Sass](http://sass-lang.com/)
+
+### Preprocesadores JS
+
+* []()
+* []()
+* []()
+
+
+LESS, Stylus, Sass, SCSS, Slim, el lenguaje Coffeescript o también LiveScript.
 
 **[⬆ regresar al índice](#Índice)**
