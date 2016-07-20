@@ -507,8 +507,8 @@ El objetivo de estos preprocesadores es tener un código más limpio y sencillo 
 
 Soportados por plataformas como:
 
-* Codepen
-* JSSLife buscar....
+* [CodePen](http://codepen.io/)
+* [JSFiddle](https://jsfiddle.net/)
 
 ### Preprocesadores HTML
 
@@ -520,6 +520,7 @@ Soportados por plataformas como:
 	* [En vivo](http://dillinger.io/)
 * [Jade](http://jade-lang.com/)
 * [Haml](http://haml.info/)
+* [Slim](http://slim-lang.com/)
 * [Handlebars](http://handlebarsjs.com/)
 * [EJS](http://ejs.co/)
 
@@ -528,14 +529,15 @@ Soportados por plataformas como:
 * [less](http://lesscss.org/)
 * [Stylus](http://stylus-lang.com/)
 * [Sass](http://sass-lang.com/)
+	* Sintaxis Sass
+	* Sintaxis SCSS
+* [PostCSS](http://postcss.org/)
 
 ### Preprocesadores JS
 
-* []()
-* []()
-* []()
-
-
-LESS, Stylus, Sass, SCSS, Slim, el lenguaje Coffeescript o también LiveScript.
+* [LiveScript](http://livescript.net/)
+* [CoffeeScript](http://coffeescript.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Babel](http://babeljs.io/)
 
 **[⬆ regresar al índice](#Índice)**
