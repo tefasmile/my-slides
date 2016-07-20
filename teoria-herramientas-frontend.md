@@ -12,7 +12,7 @@
 1. [GitHub](#github)
 1. [Más de Git & GitHub](#más-de-git--github)
 1. [Preprocesadores](#preprocesadores)
-1. [Sistemas de Automatización]()
+1. [Gestores de Tareas](#gestores-de-tareas)
 1. [Web Performance Optimization]()
 Node Version
 	https://frontendlabs.io/3397--node-js-como-trabajar-multiples-versiones-de-node-version-manager
@@ -501,18 +501,20 @@ $ > git pull origin gh-pages
 
 ## Preprocesadores
 
-Un preprocesador de **Frontend** es una herramienta que nos permite escribir pseudo-código HTML, CSS o JS que luego será convertido a código real (HTML, CSS o JS). Ese pseudo-código se conforma de variables, condiciones, bucles o funciones.
+![Preprocesadores](http://bextlan.com/img/para-cursos/preprocesadores.png)
 
-El objetivo de estos preprocesadores es tener un código más limpio y sencillo de mantener y editar. Incluyen características tales como variables, funciones, mixins, anidación y modularidad.
+Son lenguajes independientes (generalmente, más amigables, potentes y prácticos) que son capaces de traducir el código al lenguaje de destino (HTML, CSS o JavaScript), que son los únicos que los navegadores son capaces de entender de forma nativa.
 
-Soportados por plataformas como:
+El objetivo de los preprocesadores es tener un código más sencillo de mantener y editar. Incluyen características tales como variables, funciones, mixins, anidación y modularidad.
+
+Son soportados por plataformas web como:
 
 * [CodePen](http://codepen.io/)
 * [JSFiddle](https://jsfiddle.net/)
 
 ### Preprocesadores HTML
 
-* MarkDown
+* Markdown
 	* [¿Qué es?](http://whatismarkdown.com/)
 	* [Guía](http://joedicastro.com/pages/markdown.html)
 	* [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -526,7 +528,7 @@ Soportados por plataformas como:
 
 ### Preprocesadores CSS
 
-* [less](http://lesscss.org/)
+* [Less](http://lesscss.org/)
 * [Stylus](http://stylus-lang.com/)
 * [Sass](http://sass-lang.com/)
 	* Sintaxis Sass
@@ -539,5 +541,22 @@ Soportados por plataformas como:
 * [CoffeeScript](http://coffeescript.org/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Babel](http://babeljs.io/)
+
+**[⬆ regresar al índice](#Índice)**
+
+
+## Gestores de Tareas
+
+![Gestores de Tareas](http://bextlan.com/img/para-cursos/build-systems-task-runners.png)
+
+También llamados **Build Systems** o **Task Runners**, permiten automatizar tareas comunes de desarrollo, tales como la minificación de código, recarga del navegador, compresión de imágenes, validación de sintaxis de código, compilación de preprocesadores y un sin fin de tareas más.
+
+No importa si eres un desarrollador Frontend o Backend. Si hoy en día no quieres perder tiempo realizando tareas comunes manualmente, debes usarlos. Estos gestores de tareas se ayudan de componentes (plugins) para llevar a cabo su labor y cada uno tiene su propia manera de configurarse, usa el que más se acomode a tu filosofía de trabajo :grinning: .
+
+* [Grunt](http://gruntjs.com/)
+* [Gulp](http://gulpjs.com/)
+* [Brunch](http://brunch.io/)
+* [Webpack](https://webpack.github.io/)
+* [Comandos NPM](https://docs.npmjs.com/)
 
 **[⬆ regresar al índice](#Índice)**
