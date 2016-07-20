@@ -551,7 +551,7 @@ Son soportados por plataformas web como:
 
 También llamados **Build Systems** o **Task Runners**, permiten automatizar tareas comunes de desarrollo, tales como la minificación de código, recarga del navegador, compresión de imágenes, validación de sintaxis de código, compilación de preprocesadores y un sin fin de tareas más.
 
-No importa si eres un desarrollador Frontend o Backend. Si hoy en día no quieres perder tiempo realizando tareas comunes manualmente, debes usarlos. Estos gestores de tareas se ayudan de componentes (plugins) para llevar a cabo su labor y cada uno tiene su propia manera de configurarse, usa el que más se acomode a tu filosofía de trabajo :grinning: .
+No importa si eres un desarrollador Frontend o Backend. Si hoy en día no quieres perder tiempo realizando tareas comunes manualmente, debes usarlos. Estos gestores de tareas se ayudan de componentes (plugins) para llevar a cabo su labor y cada uno tiene su propia manera de configurarse, usa el que más se acomode a tu filosofía de trabajo :grinning:.
 
 * [Grunt](http://gruntjs.com/)
 * [Gulp](http://gulpjs.com/)
