@@ -372,7 +372,7 @@ $ > git push -u origin master //la primera vez que vinculamos el repositorio rem
 $ > git push //para las subsecuentes actualizaciones
 ```
 
-![Remote Origin](http://bextlan.com/img/para-cursos/git-level-origin.png)
+![Remote Origin](http://bextlan.com/img/para-cursos/git-level-origin-master.png)
 
 #### Sincronizando versiones
 
