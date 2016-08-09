@@ -511,6 +511,7 @@ Son soportados por plataformas web como:
 
 * [CodePen](http://codepen.io/)
 * [JSFiddle](https://jsfiddle.net/)
+* [JS Bin](http://jsbin.com/)
 
 ### Preprocesadores HTML
 
@@ -534,6 +535,7 @@ Son soportados por plataformas web como:
 	* Sintaxis Sass
 	* Sintaxis SCSS
 * [PostCSS](http://postcss.org/)
+	* [CSSNext](http://cssnext.io/)
 
 ### Preprocesadores JS
 
